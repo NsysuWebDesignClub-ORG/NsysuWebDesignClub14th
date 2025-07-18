@@ -1,0 +1,494 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>中山網路程式設計研究社</title>
+        <link rel="icon" type="image/x-icon" href="/images/logo.ico">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
+              integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+              integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" 
+              integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="image/logo.jpg" type="image/jpeg">
+        <link rel="shortcut icon" href="image/logo.jpg" type="image/jpeg">
+        <style>
+            .white-container {
+              background-color: #fff;
+              padding: 20px;
+              margin: 20px 0;
+              border-radius: 10px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              box-sizing: border-box;
+            }
+            .white-container h1, h2, h3, h4, h5, h6 {
+              color: #3498db;
+            }
+            .white-container a {
+              color: #3498db;
+            }
+            .sectioner-header {
+              padding-top: 60px;
+            }
+            textarea.form-control {
+              resize: vertical;
+            }
+        </style>
+    </head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand navbar-logo" href="index.html">
+                <img src="images/logo.jpg" alt="logo" class="logo-1" width="45px" height="45px">
+                <b> 中山網路程式設計研究社</b>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fas fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"> <a class="nav-link" href="index.html">社團介紹</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="index.html">目的</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="index.html">課程資訊</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="index.html">本屆幹部</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="index.html">專案成果</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="index.html">參與心得</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="https://drive.google.com/drive/folders/1gP2NNeuBzIWvkJRVRO13gvd-Wc-MO5In?usp=sharing" target="_blank">社團發展(會議記錄)</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">開放教材</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://hackmd.io/@Renektonn/Hk1QoVpYA" target="_blank" style="color: black;">113-1 C++教材</a></li>
+                            <li><a class="dropdown-item" href="https://drive.google.com/drive/folders/1U0x6OjtvMZ3Gx1K4hxA88dM3415Vmod_?usp=drive_link" target="_blank" style="color: black;">113-1 WEB教材</a></li>
+                            <li><a class="dropdown-item" href="https://drive.google.com/drive/folders/1u6W8siM4sjjD7mumkwJ8GDzfBXuhw3UD?usp=drive_link" target="_blank" style="color: black;">113-2 Python資料分析</a></li>
+                            <li><a class="dropdown-item" href="https://drive.google.com/drive/folders/1IC6mT3BBHv5j2lkQ_AU67DViFa98cPAC?usp=drive_link" target="_blank" style="color: black;">113-2 Python爬蟲</a></li>
+                           
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link" href="history.html">歷代網研</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="index.html">聯絡我們</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br><br><br>
+    
+    <div class="container">
+        <!-- Section 1: 活動說明 -->
+<section id="activity-description">
+    <div class="sectioner-header text-center">
+        <h3>113-1期末黑客松</h3>
+        <span class="line"></span>
+    </div>
+    <div class="white-container">
+        <p>
+            本學期網研社社團即將告一段落，為了感謝辛苦的講師們、幹部們以及剛結束期末考的社員，我們舉辦一場期末黑客松。<br>
+            此次聚會不僅是慶祝學期成果的聚會，同時透過小型比賽驗收教學成果，藉此促進社員間的感情交流。
+        </p>
+        <h4>活動內容</h4>
+        <p>1. C++ & WEB Kahoot 與實作競賽</p>
+        <div class="d-flex flex-wrap justify-content-between">
+            <div class="p-2">
+                <h4>時間、地點</h4>
+                <p>
+                    日期：2024年12月16日 (一)<br>
+                    場地: cm1019
+                </p>
+            </div>
+            <div class="p-2">
+                <h4>活動流程</h4>
+                <p>
+                    19:00 - 19:05 吃吃喝喝 & 期末總結<br>
+                    19:05 - 19:25 呂晉豪講師活動說明 與 C++ Kahoot 比賽 (15題)<br>
+                    19:25 - 19:45 游雅淇講師活動說明 與 WEB Kahoot 比賽 (15題)<br>
+                    19:45 - 20:50 同學實作部分 (C++：在zero judge競賽中解題、WEB：運用所學寫個人網站)<br>
+                    20:50 - 21:00 頒獎
+                </p>
+            </div>
+        </div>
+        <div class="pt-3">
+            <h4>活動摘要</h4>
+            <p><strong>【C++活動內容】</strong></p>
+            <p>
+                預計進行以 C++ 程式設計為主題的活動，結合 Kahoot 互動問答與實作題練習。首先透過 Kahoot 測試學員對變數、if-else、迴圈等基本概念的掌握，再以實作題提升同學的程式解題能力，藉由實際編碼加深概念理解。
+            </p>
+            <p><strong>【WEB活動內容】</strong></p>
+            <p>
+                預計進行整合 Web 開發知識的活動。初段利用 Kahoot 回顧課堂知識，再讓同學運用 Flask 或 Vue 框架實作個人網頁，並透過 API 串接增加網頁互動性，以體驗現代網頁開發的趣味與挑戰。
+            </p>
+        </div>
+        <div class="pt-3">
+            <h4>比賽事項</h4>
+            <p>
+                1. 不可使用任何 AI 工具，C++部分不可上網查找答案。<br>
+                2. 可參考先前的講義或上網查詢語法。<br>
+                3. C++部分以解題速度與執行時間決定排名。<br>
+                4. WEB部分由講師評分。
+            </p>
+        </div>
+    </div>
+</section>
+        
+<!-- Section 2: 題目說明 -->
+<!-- 此區塊包含各題型的範例說明，並附上選項、答案、計算過程及教學目標 -->
+<section id="question-description">
+    <!-- 區塊標題 -->
+    <div class="sectioner-header text-center">
+        <h3>題目舉例說明</h3>
+        <span class="line"></span>
+    </div>
+    <!-- 白色容器，用來包覆所有題目內容 -->
+    <div class="white-container">
+        
+        <!-- 子區塊：C++ Kahoot -->
+        <!-- 此題型包含題目文字、圖片、選項、計算過程、答案與解說、教學目標 -->
+        <div class="mb-4">
+            <h4>C++ Kahoot</h4>
+            <!-- 題目文字 -->
+            <p><strong>題目：</strong>給定下列函式 F()，執行 F() 時哪一行程式碼永遠不會被執行到？</p>
+            
+            <!-- 題目圖片 -->
+            <div>
+                <img src="images/13th/黑客松上/q1.webp" 
+                     alt="C++ Kahoot 題目圖片" 
+                     style="width:100%; max-width:1200px;">
+            </div>
+            
+            <!-- 選項 -->
+            <div class="mt-3">
+                <h5>選項：</h5>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li><strong>A.</strong> a = a + 5;</li>
+                    <li><strong>B.</strong> a = 5;</li>
+                    <li><strong>C.</strong> a = a + 2;</li>
+                    <li><strong>D.</strong> 每一行都會執行到</li>
+                </ul>
+            </div>
+            
+            <!-- 計算過程 -->
+            <div>
+                <h5>計算過程：</h5>
+                <span>
+                    程式從函式 F() 的第一行開始執行，依序執行各指令。模擬程式運行過程中發現，
+                    因為在執行到 if 條件判斷前後邏輯安排，條件式總是評估為 false，
+                    導致 a = 5; 這一行永遠不會被運行。通過逐步跟踪變數的變化，可以確定該行不被觸及。
+                </span>
+            </div>
+            
+            <!-- 答案與解說 -->
+            <div>
+                <h5>答案與解說：</h5>
+                <span>
+                    正確答案為 <strong>B</strong>。原因在於程式設計中，
+                    if 條件設定保證了 a = 5; 這一行永遠不會滿足執行條件。這個題目讓學生理解如何透過模擬程式運作流程，
+                    來檢查邏輯漏洞及死碼。
+                </span>
+            </div>
+            
+            <!-- 教學目標 -->
+            <div>
+                <h5>教學目標：</h5>
+                <span>
+                    本題旨在幫助學生熟悉程式的執行流程及條件判斷，
+                    並進一步學習如何識別並排除不必要的程式碼（死碼）。藉此提升解讀與分析程式邏輯的能力，
+                    進而培養解決實際編程問題的技能。
+                </span>
+            </div>
+        </div>
+        
+        <!-- 子區塊：C++ 實作 -->
+        <!-- 此題型包含實作題目圖片及兩題範例的說明：阿姆斯壯數與 Bert 三角形 -->
+        <div class="mb-4">
+            <h4>C++ 實作</h4>
+            <!-- 實作題目圖片，置中且寬度較大 -->
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="images/13th/黑客松上/C2_2.jpg" 
+                     alt="C++ 實作題目圖片" 
+                     style="width:100%; max-width:1200px;">
+            </div>
+            
+            <!-- 阿姆斯壯數題目說明 -->
+            <div class="mb-4">
+                <h5>阿姆斯壯數題目說明</h5>
+                <p>
+                    阿姆斯壯數（又稱自戀數）是指一個 n 位數，其各位數字的 n 次方和恰好等於該數本身。<br>
+                    例如：153 為三位數，可證明 1³ + 5³ + 3³ = 153。
+                </p>
+                <p>
+                    <strong>技術點：</strong><br>
+                    1. 利用迴圈與取餘數（%）運算將數字拆解成各個位數。<br>
+                    2. 使用乘方運算（或迴圈計算連乘）計算每個數字的 n 次方。<br>
+                    3. 累加所有次方後，與原數字進行比較判斷。
+                </p>
+                <p>
+                    <strong>與上課內容連結：</strong><br>
+                    本題整合了變數操作、基本算數運算、條件判斷與迴圈控制，
+                    是上課中強調的基礎程式設計技巧的實際應用，有助於學生加深對數字處理與邏輯流程的理解。
+                </p>
+            </div>
+            
+            <!-- Bert 三角形題目說明 -->
+            <div class="mb-4">
+                <h5>Bert 三角形題目說明</h5>
+                <p>
+                    Bert 三角形題目要求根據使用者輸入的行數，輸出一個特定格式的三角形圖案。
+                    題目設計通常需要依據行數及每列的空格與圖案符號（如星號或數字）的排列，
+                    來呈現對稱或遞增的效果。
+                </p>
+                <p>
+                    <strong>技術點：</strong><br>
+                    1. 利用巢狀迴圈，外層迴圈控制行數，內層迴圈負責輸出每行的空格與圖案符號。<br>
+                    2. 條件判斷決定在特定位置輸出空白或圖案元素，進而調整格式與排版。
+                </p>
+                <p>
+                    <strong>與上課內容連結：</strong><br>
+                    此題目有效練習了巢狀迴圈與字串格式輸出技巧，
+                    是「迴圈與條件判斷」單元的重要延伸，能夠幫助學生學會設計演算法與控制輸出格式。
+                </p>
+            </div>
+        </div>
+        
+        <!-- 子區塊：web Kahoot -->
+        <!-- 此題型包含題目文字、選項、答案與解說、教學目標 -->
+        <div class="mb-4">
+            <h4>web Kahoot</h4>
+            <!-- 題目文字 -->
+            <p><strong>題目：</strong>Flask 如果要顯示網頁頁面的話，哪個方法為被使用？</p>
+            
+            <!-- 選項 -->
+            <div>
+                <h5>選項：</h5>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li><strong>A.</strong> redirect</li>
+                    <li><strong>B.</strong> template</li>
+                    <li><strong>C.</strong> static</li>
+                    <li><strong>D.</strong> jinja</li>
+                </ul>
+            </div>
+            
+            <!-- 答案與解說 -->
+            <div>
+                <h5>答案與解說：</h5>
+                <span>
+                    正確答案為 <strong>B</strong>。Flask 運作時會使用 template 方法配合 Jinja2 模板引擎來渲染和顯示網頁頁面，
+                    而 redirect 則用於重新導向，static 用於提供靜態資源，jinja 雖為模板引擎名稱但並非直接呼叫的方法。
+                    此題目旨在幫助學生了解 Flask 框架核心的網頁渲染機制。
+                </span>
+            </div>
+            
+            <!-- 教學目標 -->
+            <div>
+                <h5>教學目標：</h5>
+                <span>
+                    本題目的設計是為了讓學生熟悉 Flask 中模板渲染的基本流程，
+                    認識如何運用 template 方法和 Jinja2 結合，以產生動態網頁。
+                    同時，學生也能學會區分不同方法的用途，鞏固網頁開發的基礎知識。
+                </span>
+            </div>
+        </div>
+        
+        <!-- 子區塊：web 實作 -->
+        <!-- 此題型僅提供簡單指示，請同學根據所學製作個人網頁 -->
+        <div class="mb-4">
+            <h4>web 實作</h4>
+            <p>請同學根據上課所學製作個人網頁（個資問題不放截圖）。</p>
+        </div>
+        
+    </div>
+</section>
+        
+        <!-- Section 3: 得獎照片 -->
+        <section id="awards">
+            <div class="sectioner-header text-center">
+                <h3>得獎照片</h3>
+                <span class="line"></span>
+            </div>
+            <div class="row text-center white-container">
+                <!-- For C++ awards -->
+                <div class="col-md-6">
+                    <h4>C++</h4>
+                    <img src="images/13th/黑客松上/4 - 複製.jpg" alt="C++ 得獎照片" style="width: 100%;">
+                    <p style="font-size: 1.5vw;">得獎：陳粢渝、林詩穎、王研安、劉育安</p>
+                </div>
+                <!-- For WEB awards -->
+                <div class="col-md-6">
+                    <h4>WEB</h4>
+                    <img src="images/13th/黑客松上/3.jpg" alt="WEB 得獎照片" style="width: 100%;">
+                    <p style="font-size: 1.5vw;">得獎：羅婕瑜、查欣瑜</p>
+                </div>
+            </div>
+        </section>
+        
+<!-- Section 4: 參與同學心得 -->
+<section id="student-feedback">
+    <!-- 區塊標題 -->
+    <div class="sectioner-header text-center">
+        <h3>參與同學心得</h3>
+        <span class="line"></span>
+    </div>
+    <!-- 白色背景容器，包覆所有同學心得 -->
+    <div class="white-container">
+        <!-- 查欣瑜的心得 -->
+        <div class="mb-4">
+            <h5>查欣瑜</h5>
+            <!-- 同學心得內容 -->
+            <p>
+                從參加網研以來，我對程式設計的興趣和能力都有了很大的提升。每週的課程不只讓我學到新的知識，
+                也讓我更了解資管這個領域未來可能的發展方向。<br><br>
+                這學期開始實際練習網頁製作，讓我有機會把課堂上學到的東西應用在實作中。過程中雖然遇到不少挑戰，
+                但也因此學會了很多解決問題的方法。透過一次次的練習，我發現自己在邏輯思考和動手實作方面都進步了不少，
+                也更有信心繼續學習下去。
+            </p>
+        </div>
+        
+        <!-- 羅婕瑜的心得 -->
+        <div class="mb-4">
+            <h5>羅婕瑜</h5>
+            <!-- 同學心得內容 -->
+            <p>
+                從大一上學期開始接觸網研後，我發現自己的程式語言能力有了顯著的進步，因為講師們都是學長姐，
+                他們能很清楚知道我們可能哪些地方容易搞不清楚，或者聽不懂老師講的內容，可以進一步糾正與引導大家。
+                而且每次上課都能學到新的知識，尤其是陳啟誠學長的經驗分享，不僅增廣了我的視野，
+                也讓我對資管系未來的出路和發展方向有了更清楚的認識。<br><br>
+                這學期的課程內容是學爬蟲，讓我能夠學到系上必修沒有教，但也十分實用的課程。透過一次次的練習與實作，
+                我覺得自己的邏輯思維和解決問題的能力都有明顯提升，也更加確定自己未來想繼續往這個方向努力。
+            </p>
+        </div>
+        
+        <!-- 陳粢渝的心得 -->
+        <div class="mb-4">
+            <h5>陳粢渝</h5>
+            <!-- 同學心得內容 -->
+            <p>
+                上學期我參加了網研社的 C++ 課程，原本我的 C++ 只在非常基礎的程度，
+                但透過這門社課的學習，我不僅補強了原本薄弱的基礎，還進一步學到了許多進階的概念。
+                現在面對大二的程式設計必修課，我也因此比較不會擔心跟不上進度。<br><br>
+                講師的教學方式非常清楚易懂，不會講得太快，會從最基本的環境安裝開始，
+                像我這樣的初學者也能跟上。除了課堂內容本身，講師也會適時與我們互動，
+                親切地下來了解每位同學的學習狀況，還會幫忙我們解其他必修課的程式作業，
+                讓我深刻感受到講師的用心與熱情。印象深刻的是，講師會用生動有趣的方式來幫助我們記憶複雜的觀念，
+                還分享了許多自身在學習程式時的寶貴經驗與建議。<br><br>
+                遇到問題時，網研社的幹部們也會很貼心的幫忙社員，
+                也非常感謝學長姐們在最後一堂社課準備了好吃又好玩的黑客松活動。
+                真心推薦想學習程式的同學們可以來加入網研社，一起快樂寫 code！
+            </p>
+        </div>
+    </div>
+</section>
+        
+        <!-- Section 5: 花絮照片 (Carousel) -->
+        <section id="highlights">
+            <div class="sectioner-header text-center">
+                <h3>花絮照片</h3>
+                <span class="line"></span>
+            </div>
+            <div id="highlightsCarousel" class="carousel slide white-container" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/13th/黑客松上/1.jpg" class="d-block w-100" alt="花絮照片 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/13th/黑客松上/2.jpg" class="d-block w-100" alt="花絮照片 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/13th/黑客松上/6.jpg" class="d-block w-100" alt="花絮照片 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/13th/黑客松上/7.jpg" class="d-block w-100" alt="花絮照片 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#highlightsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">上一頁</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#highlightsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">下一頁</span>
+                </button>
+            </div>
+        </section>
+        
+    </div>
+
+    <footer class="footer-copy">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>2024 Website Designed by <a href="http://w3Template.com" target="_blank" rel="dofollow">W3 Template</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" 
+            integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" 
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+            crossorigin="anonymous"></script>
+    <script src="js/scrollIt.min.js"></script> 
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+        $(document).ready(function() {
+            $('#video-icon').on('click', function(e){
+                e.preventDefault();
+                $('.video-popup').css('display','flex');
+                $('.iframe-src').slideDown();
+            });
+            $('.video-popup').on('click', function(e){
+                var $target = e.target.nodeName;
+                var video_src = $(this).find('iframe').attr('src');
+                if($target != 'IFRAME'){
+                    $('.video-popup').fadeOut();
+                    $('.iframe-src').slideUp();
+                    $('.video-popup iframe').attr('src'," ");
+                    $('.video-popup iframe').attr('src',video_src);
+                }
+            });
+        });
+
+        $(window).on("scroll", function () {
+            var bodyScroll = $(window).scrollTop(),
+                navbar = $(".navbar");
+            if(bodyScroll > 50){
+                $('.navbar-logo img').attr('src','images/logo.jpg');
+                navbar.addClass("nav-scroll");
+            } else {
+                $('.navbar-logo img').attr('src','images/logo.jpg');
+                navbar.removeClass("nav-scroll");
+            }
+        });
+
+        $(window).on("load", function (){
+            var bodyScroll = $(window).scrollTop(),
+                navbar = $(".navbar");
+            if(bodyScroll > 50){
+                $('.navbar-logo img').attr('src','images/logo.jpg');
+                navbar.addClass("nav-scroll");
+            } else {
+                $('.navbar-logo img').attr('src','images/logo.jpg');
+                navbar.removeClass("nav-scroll");
+            }
+            $.scrollIt({
+                easing: 'swing',
+                scrollTime: 900,
+                activeClass: 'active',
+                onPageChange: null,
+                topOffset: -63
+            });
+        });
+    </script>
+</body>
+</html>

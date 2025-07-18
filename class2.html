@@ -1,0 +1,476 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>中山網路程式設計研究社 | 課程介紹</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!-- Font Google -->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/logo.jpg" type="image/jpeg">
+    <link rel="shortcut icon" href="image/logo.jpg" type="image/jpeg">
+    <link rel="icon" type="image/x-icon" href="/images/logo.ico">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css"> -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+    <!-- Font Google -->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet"> -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="image/logo.jpg" type="image/jpeg">
+    <link rel="shortcut icon" href="image/logo.jpg" type="image/jpeg">
+</head>
+<script>
+    window.addEventListener('DOMContentLoaded', (event) => {
+        // 解析 URL 中的参数
+        const params = new URLSearchParams(window.location.search);
+        const classIndex = params.get('class');
+
+        // 如果存在 class 参数并且是数字
+        if (classIndex !== null && !isNaN(classIndex)) {
+            // 获取要滚动到的元素
+            const targetElement = document.querySelector(`[data-scroll-index='${classIndex}']`);
+
+            // 如果找到目标元素，则执行滚动
+            if (targetElement) {
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    });
+</script>
+<body>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+ 
+<!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand navbar-logo" href="index.html">
+                <img src="images/logo.jpg" alt="logo" class="logo-1" width="45px" height="45px">
+                <b> 中山網路程式設計研究社</b>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fas fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"> <a class="nav-link" href="index.html">社團介紹</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="index.html">目的</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="index.html">課程資訊</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="index.html">本屆幹部</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="index.html">專案成果</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="index.html">參與心得</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="https://drive.google.com/drive/folders/1gP2NNeuBzIWvkJRVRO13gvd-Wc-MO5In?usp=sharing" target="_blank">社團發展(會議記錄)</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">開放教材</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://hackmd.io/@Renektonn/Hk1QoVpYA" target="_blank" style="color: black;">113-1 C++教材</a></li>
+                            <li><a class="dropdown-item" href="https://drive.google.com/drive/folders/1U0x6OjtvMZ3Gx1K4hxA88dM3415Vmod_?usp=drive_link" target="_blank" style="color: black;">113-1 WEB教材</a></li>
+                            <li><a class="dropdown-item" href="https://drive.google.com/drive/folders/1u6W8siM4sjjD7mumkwJ8GDzfBXuhw3UD?usp=drive_link" target="_blank" style="color: black;">113-2 Python資料分析</a></li>
+                            <li><a class="dropdown-item" href="https://drive.google.com/drive/folders/1IC6mT3BBHv5j2lkQ_AU67DViFa98cPAC?usp=drive_link" target="_blank" style="color: black;">113-2 Python爬蟲</a></li>
+                           
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link" href="history.html">歷代網研</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="index.html">聯絡我們</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+<!-- End Navbar --> 
+<section class="banner_sm">
+    <div class="banner-overlay">
+      <div class="container">
+        
+      </div>
+    </div>
+</section>
+
+<br><br><br>
+<div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="sectioner-header text-center ">
+          <h3>國立中山大學 網路程式設計研究社</h3>
+          <span class="line"></span>
+          <p >113-2 課程資訊</p>
+        </div>
+    </div>
+</div>
+
+<br><br><br>
+<section class="class" data-scroll-index='1'>
+    <div class="table_container">
+        <div class="course-image">
+            <img src="images/13th/dataA.jpg" alt="圖片遺失">
+        </div>
+        <div class="course-info">
+            <h4>Python資料分析講師簡介</h4>
+            <p>資管115級 方敬堂</p>
+            <h5>課程簡介</h5>
+            <p>: 學姊，你要跟我一起出去走走嗎?<br>
+: 呃，這麼突然?<br>
+: 學姊你不是說，只要我資料庫管理拿A+就會約我出去嗎?<br>
+: 但是……你統計資料分析只拿了A……<br>
+想知道怎麼整理大量的數據資料嗎?
+想知道怎麼了解資料的整體趨勢嗎?
+想知道怎麼透過程式與資料預測未來的走向嗎?
+上述問題，你都能在這堂課中獲得解答! 
+本課程將從最基礎開始，透過python實作讓同學了解資料處理、數據分析及現下熱門的AI與機器學習，讓過去看似遙不可及的專業領域變得伸手可得，也讓資管哥從魯蛇蛻變成能被利用的工具人魯蛇!
+(以上劇情純屬虛構。若有巧合，那就是你……)</p>
+            <a href="https://drive.google.com/drive/folders/1u6W8siM4sjjD7mumkwJ8GDzfBXuhw3UD">課程教材連結</a>
+        </div>
+        <!-- <table>
+            <tr>
+                <th>週次</th>
+                <th>日期</th>
+                <th>大綱</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2024/09/09</td>
+                <td>準備週</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2024/09/16</td>
+                <td>準備週</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>2024/09/23</td>
+                <td>環境架設&C++基本語法</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>2024/09/30</td>
+                <td>颱風暫停一次</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>2024/10/07</td>
+                <td>if-else</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>2024/10/14</td>
+                <td>迴圈、巢狀迴圈</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>2024/10/21</td>
+                <td>迴圈、巢狀迴圈</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>2024/10/28</td>
+                <td>期中周</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>2024/11/04</td>
+                <td>講師生病暫停一次</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>2024/11/11</td>
+                <td>陣列、字串</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>2024/11/18</td>
+                <td>陣列、字元</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>2024/11/25</td>
+                <td>函式、遞迴</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>2024/12/02</td>
+                <td>函式、遞迴</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>2024/12/09</td>
+                <td>排序、搜尋</td>
+            </tr>
+            <tr>
+                <td>15(加課)</td>
+                <td>2024/12/19</td>
+                <td>排序、搜尋</td>
+            </tr>
+        </table> -->
+            <div>
+            <img src="images/13th/pyd1.jpg" style="    width: 48%;">
+            <img src="images/13th/S__317997063_0.jpg" style="    width: 48%;">
+        </div>
+    </div>  
+</section>
+
+<br><br><hr><br><br>
+<section class="class" data-scroll-index='2'>
+    <div class="table_container">
+        <div class="course-image">
+            <img src="images/13th/S__69427217.jpg" alt="圖片遺失">
+        </div>
+        <div class="course-info">
+            <h4>WEB講師簡介</h4>
+            <p>資管115級 李景臣</p>
+            <h5>課程簡介</h5>
+            <p>喜歡你，這句話，太輕浮。<br>
+我愛你，這句話，太沉重。<br>
+我們一起去學網路爬蟲，這句話，剛剛好。<br>
+你是否曾經好奇，網頁背後隱藏著怎樣的資料？你是否想過如何快速抓取大量資料並進行分析？這門課程將帶你一起探索如何用 Python 打造高效的網絡爬蟲。
+本課程涵蓋Python的環境設置、基礎操作（變數、迴圈、陣列、函式），之後深入學習Selenium和Scrapy等爬蟲工具，並通過Pandas將資料進行初步處理。
+此外，我們也會介紹Github的應用，以及物件導向程式的概念。這些技能都對未來的統計資料分析、資料庫管理、企業資料通訊、巨量資料分析等必修有很大幫助，歡迎大家一起來學習</p>
+            <a href="https://drive.google.com/drive/folders/1IC6mT3BBHv5j2lkQ_AU67DViFa98cPAC">課程教材連結</a>
+        </div>
+
+
+
+        <!-- <table>
+            <tr>
+                <th>週次</th>
+                <th>日期</th>
+                <th>大綱</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>2024/09/11</td>
+                <td>準備週</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2024/09/18</td>
+                <td>準備週</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>2024/09/24</td>
+                <td>Introduction to Web Development & CSS Basics</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>2024/10/01</td>
+                <td>颱風暫停一次</td>
+            </tr>            
+            <tr>
+                <td>5</td>
+                <td>2024/10/08</td>
+                <td>Javascript Fundamentals</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>2024/10/15</td>
+                <td>Introduction to Vue.js & Basic Data Binding</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>2024/10/22</td>
+                <td>Vue.js Directives and Event Handling</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>2024/10/29</td>
+                <td>期中周</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>2024/11/05</td>
+                <td>Building a To-Do List in Vue.js</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>2024/11/12</td>
+                <td>Vue.js Router & Project Structure</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>2024/11/19</td>
+                <td>Introduction to Flask (Backend)</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>2024/11/26</td>
+                <td>講師請假</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>2024/12/03</td>
+                <td>講師請假</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>2024/12/10</td>
+                <td>Introduction to MongoDB & Connecting Flask to MongoDB</td>
+            </tr>
+        </table> -->
+
+                <div>
+            <img src="images/13th/pyd1.jpg" style="    width: 48%;">
+            <img src="images/13th/pyw2.jpg" style="    width: 48%;">
+        </div>
+    </div>
+</section>
+<footer class="footer-copy">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-12">
+          <!-- <p>2018 &copy; Applight. Website Designed by <a href="http://w3Template.com" target="_blank" rel="dofollow">W3 Template</a></p> -->
+          <p>2024 Website Designed by <a href="http://w3Template.com" target="_blank" rel="dofollow">W3 Template</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script> 
+<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script> 
+<!-- scrollIt js --> 
+<script src="js/scrollIt.min.js"></script> 
+<script src="js/wow.min.js"></script> 
+<script>
+	wow = new WOW();
+	wow.init();
+$(document).ready(function(e) {
+
+	$('#video-icon').on('click',function(e){
+	e.preventDefault();
+	$('.video-popup').css('display','flex');
+	$('.iframe-src').slideDown();
+	});
+	$('.video-popup').on('click',function(e){
+	var $target = e.target.nodeName;
+	var video_src = $(this).find('iframe').attr('src');
+	if($target != 'IFRAME'){
+	$('.video-popup').fadeOut();
+	$('.iframe-src').slideUp();
+	$('.video-popup iframe').attr('src'," ");
+	$('.video-popup iframe').attr('src',video_src);
+	}
+	});
+
+	$('.slider').bxSlider({
+	pager: false
+	});
+});
+    
+$(window).on("scroll",function () {
+
+	var bodyScroll = $(window).scrollTop(),
+	navbar = $(".navbar");
+	
+	if(bodyScroll > 50){
+	$('.navbar-logo img').attr('src','images/logo.jpg');
+	navbar.addClass("nav-scroll");
+
+}else{
+	$('.navbar-logo img').attr('src','images/logo.jpg');
+	navbar.removeClass("nav-scroll");
+}
+
+});
+$(window).on("load",function (){
+	var bodyScroll = $(window).scrollTop(),
+	navbar = $(".navbar");
+	
+	if(bodyScroll > 50){
+	$('.navbar-logo img').attr('src','images/logo.jpg');
+	navbar.addClass("nav-scroll");
+	}else{
+	$('.navbar-logo img').attr('src','images/logo.jpg');
+	navbar.removeClass("nav-scroll");
+	}
+
+	$.scrollIt({
+	
+	easing: 'swing',      // the easing function for animation
+	scrollTime: 900,       // how long (in ms) the animation takes
+	activeClass: 'active', // class given to the active nav element
+	onPageChange: null,    // function(pageIndex) that is called when page is changed
+	topOffset: -63
+	});
+});
+
+</script>
+    <style>
+        /* navbar container 改善空間擠壓 */
+        .navbar>.container {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        /* 基本 nav 字型與間距 */
+        .navbar .nav-item a {
+            color: #fff;
+            font-size: 13px;
+            font-weight: 600;
+            padding: 8px 12px;
+            transition: all 0.3s ease;
+        }
+
+        .navbar .nav-item a:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            color: #01295c;
+        }
+
+        /* RWD: 991px 以下變成 dropdown 垂直 */
+        @media (max-width: 991px) {
+            .navbar .navbar-collapse {
+                flex-direction: column;
+                align-items: flex-start;
+                background-color: #7a95bb;
+                padding: 15px;
+                animation: slideDown 0.3s ease-out;
+            }
+
+            .navbar .navbar-nav {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+            }
+
+            .navbar .nav-item {
+                width: 100%;
+                margin: 5px 0;
+            }
+
+            .navbar .nav-item a {
+                font-size: 14px;
+                padding: 10px;
+                white-space: normal;
+                width: 100%;
+                display: block;
+            }
+        }
+
+        /* 動畫效果 */
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                transform: translateY(-10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>

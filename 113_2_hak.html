@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>中山網路程式設計研究社</title>
+        <link rel="icon" type="image/x-icon" href="/images/logo.ico">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" 
+              integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+              integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css" />
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" 
+              integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="image/logo.jpg" type="image/jpeg">
+        <link rel="shortcut icon" href="image/logo.jpg" type="image/jpeg">
+        <style>
+            .white-container {
+              background-color: #fff;
+              padding: 20px;
+              margin: 20px 0;
+              border-radius: 10px;
+              box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+              box-sizing: border-box;
+            }
+            .white-container h1, h2, h3, h4, h5, h6 {
+              color: #3498db;
+            }
+            .white-container a {
+              color: #3498db;
+            }
+            .sectioner-header {
+              padding-top: 60px;
+            }
+            textarea.form-control {
+              resize: vertical;
+            }
+        </style>
+    </head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand navbar-logo" href="index.html">
+                <img src="images/logo.jpg" alt="logo" class="logo-1" width="45px" height="45px">
+                <b> 中山網路程式設計研究社</b>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="fas fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item"> <a class="nav-link" href="index.html">社團介紹</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="index.html">目的</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="index.html">課程資訊</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="index.html">本屆幹部</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="index.html">專案成果</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="index.html">參與心得</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="https://drive.google.com/drive/folders/1gP2NNeuBzIWvkJRVRO13gvd-Wc-MO5In?usp=sharing" target="_blank">社團發展(會議記錄)</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">開放教材</a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="https://hackmd.io/@Renektonn/Hk1QoVpYA" target="_blank" style="color: black;">113-1 C++教材</a></li>
+                            <li><a class="dropdown-item" href="https://drive.google.com/drive/folders/1U0x6OjtvMZ3Gx1K4hxA88dM3415Vmod_?usp=drive_link" target="_blank" style="color: black;">113-1 WEB教材</a></li>
+                            <li><a class="dropdown-item" href="https://drive.google.com/drive/folders/1u6W8siM4sjjD7mumkwJ8GDzfBXuhw3UD?usp=drive_link" target="_blank" style="color: black;">113-2 Python資料分析</a></li>
+                            <li><a class="dropdown-item" href="https://drive.google.com/drive/folders/1IC6mT3BBHv5j2lkQ_AU67DViFa98cPAC?usp=drive_link" target="_blank" style="color: black;">113-2 Python爬蟲</a></li>
+                           
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item"> <a class="nav-link" href="history.html">歷代網研</a> </li>
+                    <li class="nav-item"> <a class="nav-link" href="index.html">聯絡我們</a> </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br><br><br>
+    
+    <div class="container">
+        <!-- Section 1: 活動說明 -->
+<section id="activity-description">
+    <div class="sectioner-header text-center">
+        <h3>113-2期末黑客松</h3>
+        <span class="line"></span>
+    </div>
+    <div class="white-container">
+        <p>
+            本學期網研社社團即將告一段落，為了感謝辛苦的講師們、幹部們以及剛結束期末考的社員，我們舉辦一場期末黑客松。<br>
+            此次聚會不僅是慶祝學期成果的聚會，同時透過小型比賽驗收教學成果，藉此促進社員間的感情交流。
+        </p>
+        <h4>活動內容</h4>
+        <p>Python 資料分析 & 網路爬蟲 與實作競賽</p>
+        <div class="d-flex flex-wrap justify-content-between">
+            <div class="p-2">
+                <h4>時間、地點</h4>
+                <p>
+                    日期：2025年05月27日 (二)<br>
+                    場地: cm1019
+                </p>
+            </div>
+            <div class="p-2">
+                <h4>活動流程</h4>
+                <p>
+                    17:00 - 17:05 吃吃喝喝 & 期末總結<br>
+                    17:05 - 17:25 李景臣講師活動說明 與 Python 網路爬蟲 比賽 (20題)<br>
+                    17:25 - 17:45 方敬堂講師活動說明 與 Python 資料分析 比賽 (15題)<br>
+                    17:45 - 18:50 同學實作部分 (C++：在zero judge競賽中解題、WEB：運用所學寫個人網站)<br>
+                    18:50 - 19:00 頒獎
+                </p>
+            </div>
+        </div>
+        <div class="pt-3">
+            <h4>活動摘要</h4>
+            <p><strong>【Python 網路爬蟲】</strong></p>
+            <p>
+                預計進行以 Python 網路爬蟲設計為主題的活動，結合 Kahoot 互動問答與實作題練習。首先透過 Kahoot 測試學員對基礎的爬蟲語法、邏輯、變數等概念的遊玩測驗，再以實作題實際的爬講師精心製作的網頁提升同學的程式能力，有趣又可以實際的運用課堂所學。
+            </p>
+            <p><strong>【Python 資料分析】</strong></p>
+            <p>
+                初段利用 Kahoot 回顧課堂知識與基礎的python語法、資料分析的變數邏輯，再讓同學連上講師特別在黑客松架設的伺服器裡面解題+分析資料，題目根據不同難易度獲得不同分數，體驗由淺入深的趣味與挑戰。
+            </p>
+        </div>
+        <div class="pt-3">
+            <h4>比賽事項</h4>
+            <p>
+                1. 不可使用任何 AI 工具。<br>
+                2. 可參考先前的講義或上網查詢語法。<br>
+                3. 排名依照得分高低。<br>
+                4. 不同題目會依據難易度給分。
+                5. 爬蟲要實際跑給講師看，不可複製同學的程式碼
+            </p>
+        </div>
+    </div>
+</section>
+        
+<!-- Section 2: 題目說明 -->
+<!-- 此區塊包含各題型的範例說明，並附上選項、答案、計算過程及教學目標 -->
+<section id="question-description">
+    <!-- 區塊標題 -->
+    <div class="sectioner-header text-center">
+        <h3>題目舉例說明</h3>
+        <span class="line"></span>
+    </div>
+    <!-- 白色容器，用來包覆所有題目內容 -->
+    <div class="white-container">
+        
+        <!-- 子區塊：C++ Kahoot -->
+        <!-- 此題型包含題目文字、圖片、選項、計算過程、答案與解說、教學目標 -->
+        <div class="mb-4">
+            <h4>Python 網路爬蟲</h4>
+            <div style="margin-left: 2vw;">
+                <h5>
+                    <a href="https://dashboard.blooket.com/set/681c557b7f0f29e9a5fbd235">
+                        - 完整題目連結 -
+                    </a>
+                </h5>
+            </div>
+
+            <!-- 題目文字 -->
+            <p><strong>題目：</strong>Selenium中，有哪些方法「不能」協助避開網頁的機器人檢測？</p>
+            
+            <!-- 題目圖片 -->
+            <!-- <div>
+                <img src="images/13th/黑客松下/crawl_ka.png" 
+                     alt="C++ Kahoot 題目圖片" 
+                     style="width:100%; max-width:1200px;">
+            </div> -->
+            
+            <!-- 選項 -->
+            <div class="mt-3">
+                <h5>選項：</h5>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li><strong>A.</strong> 修改navigator.webdriver屬性為false</li>
+                    <li><strong>B.</strong> 設置User-Agent</li>
+                    <li><strong>C.</strong> 使用ActionChains模擬使用者操作</li>
+                    <li><strong>D.</strong> 禁用所有外部資源加載</li>
+                </ul>
+            </div>
+            
+            <!-- 計算過程 -->
+            <div>
+                <h5>計算過程：</h5>
+                <span>
+                    我們要判斷哪些方法無法協助避開網頁的機器人檢測。<br>
+                    A. 修改 navigator.webdriver 屬性為 false
+                    → 常見反偵測手法，可避免網站透過 navigator.webdriver == true 判斷自動化工具。✅可用
+                    <br>
+                    B. 設置 User-Agent
+                    → 模擬一般瀏覽器發送請求的標頭資訊，是常見且有效的反機器人偵測手段。✅可用
+                    <br>
+                    C. 使用 ActionChains 模擬使用者操作
+                    → 模擬滑鼠移動、點擊、拖曳等操作，有助於讓自動化行為更貼近真人。✅可用
+                    <br>
+                    D. 禁用所有外部資源加載
+                    → 雖可提升效能，但會導致網頁行為異常，進而更容易被網站發現為機器人，反而不利於避開檢測。❌不能用
+
+                </span>
+            </div>
+            
+            <!-- 答案與解說 -->
+            <div style="margin-top: 3vh;margin-bottom: 3vh;">
+                <h5>答案與解說：</h5>
+                <span>
+                    正確答案為 <strong>D</strong>。
+                    <br>禁用所有外部資源如圖片、CSS、JavaScript 雖可加快載入速度，但網站常利用這些資源中的 JavaScript 進行驗證，如行為追蹤與指紋辨識。完全禁用反而讓網站更容易察覺爬蟲行為，因此「不能」協助避開機器人檢測。
+                </span>
+            </div>
+            
+            <!-- 教學目標 -->
+            <div>
+                <h5>教學目標：</h5>
+                <span>
+                    本題旨在幫助學生理解 Selenium 中的反機器人偵測機制，以及常見的反偵測手法與其效果，並學會辨別哪些手法對繞過檢測有幫助，哪些則反而造成暴露風險。
+                </span>
+            </div>
+        </div>
+        
+        <!-- 子區塊：Python 網路爬蟲 實作 -->
+        <!-- 此題型包含實作題目圖片及兩題範例的說明：阿姆斯壯數與 Bert 三角形 -->
+        <div class="mb-4">
+            <h4>Python 網路爬蟲 實作</h4>
+            <!-- 實作題目圖片，置中且寬度較大 -->
+            <div style="margin-left: 2vw;">
+                <h5>
+                    <a href="https://drive.google.com/file/d/1_FIXSnc3zb77hKGv_q1lF_6uI767j2yq/view?usp=sharing">
+                        - 題目連結 -
+                    </a>
+                </h5>
+            </div>
+            <div style="text-align: center; margin: 20px 0;">
+                <img src="images/13th/黑客松下/c_3.png" 
+                     alt="網路爬蟲 實作題目圖片" 
+                     style="max-width:1200px;">
+                <img src="images/13th/黑客松下/c_2.png" 
+                     alt="網路爬蟲 實作題目圖片" 
+                     style="max-width:1200px;">
+                <img src="images/13th/黑客松下/c_1.png" 
+                     alt="網路爬蟲 實作題目圖片" 
+                     style="max-width:1200px;">
+                 
+                 <br>
+                <h7>
+                    <a href="https://drive.google.com/file/d/1hbXbyF91wwFIzCoAXA7KJw-2GIh_jMn5/view?usp=sharing">
+                        - Q3的資料集連結 -
+                    </a>
+                </h7>
+            </div>
+            
+            
+            <!-- 阿姆斯壯數題目說明 -->
+            <!-- <div class="mb-4">
+                <h5>阿姆斯壯數題目說明</h5>
+                <p>
+                    阿姆斯壯數（又稱自戀數）是指一個 n 位數，其各位數字的 n 次方和恰好等於該數本身。<br>
+                    例如：153 為三位數，可證明 1³ + 5³ + 3³ = 153。
+                </p>
+                <p>
+                    <strong>技術點：</strong><br>
+                    1. 利用迴圈與取餘數（%）運算將數字拆解成各個位數。<br>
+                    2. 使用乘方運算（或迴圈計算連乘）計算每個數字的 n 次方。<br>
+                    3. 累加所有次方後，與原數字進行比較判斷。
+                </p>
+                <p>
+                    <strong>與上課內容連結：</strong><br>
+                    本題整合了變數操作、基本算數運算、條件判斷與迴圈控制，
+                    是上課中強調的基礎程式設計技巧的實際應用，有助於學生加深對數字處理與邏輯流程的理解。
+                </p>
+            </div> -->
+            
+            <!-- Bert 三角形題目說明 -->
+            <!-- <div class="mb-4">
+                <h5>Bert 三角形題目說明</h5>
+                <p>
+                    Bert 三角形題目要求根據使用者輸入的行數，輸出一個特定格式的三角形圖案。
+                    題目設計通常需要依據行數及每列的空格與圖案符號（如星號或數字）的排列，
+                    來呈現對稱或遞增的效果。
+                </p>
+                <p>
+                    <strong>技術點：</strong><br>
+                    1. 利用巢狀迴圈，外層迴圈控制行數，內層迴圈負責輸出每行的空格與圖案符號。<br>
+                    2. 條件判斷決定在特定位置輸出空白或圖案元素，進而調整格式與排版。
+                </p>
+                <p>
+                    <strong>與上課內容連結：</strong><br>
+                    此題目有效練習了巢狀迴圈與字串格式輸出技巧，
+                    是「迴圈與條件判斷」單元的重要延伸，能夠幫助學生學會設計演算法與控制輸出格式。
+                </p>
+            </div> -->
+        </div>
+        
+        <div style="margin: 5vh 0vh;">
+            <hr>
+        </div>
+
+        <!-- 子區塊：Python 資料分析 Kahoot -->
+        <!-- 此題型包含題目文字、選項、答案與解說、教學目標 -->
+        <div class="mb-4">
+            <h4>Python 資料分析 Kahoot</h4>
+            <div style="margin-left: 2vw;">
+                <h5>
+                    <a href="https://dashboard.blooket.com/set/68358a1a3f9f47283616306c">
+                        - 完整題目連結 -
+                    </a>
+                </h5>
+            </div>
+            <!-- 題目文字 -->
+            <p><strong>題目：</strong>Decision Tree是用什麼決定判斷結果好壞？</p>
+            
+            <!-- 選項 -->
+            <div>
+                <h5>選項：</h5>
+                <ul style="list-style-type: none; padding-left: 0;">
+                    <li><strong>A.</strong> F1 Score</li>
+                    <li><strong>B.</strong> Entropy</li>
+                    <li><strong>C.</strong> Recall</li>
+                    <li><strong>D.</strong> Accuracy</li>
+                </ul>
+            </div>
+            
+            <!-- 答案與解說 -->
+            <div>
+                <h5>答案與解說：</h5>
+                <span>
+                    正確答案為 <strong>B</strong>。
+                    <br>
+                    決策樹在建構過程中，會根據某些「純度指標（impurity measures）」來選擇最佳的切分特徵。最常見的就是 Entropy（熵），以及其衍生的 資訊增益（Information Gain）。
+這些指標用來評估節點資料的混亂程度，選擇可使資料純度提高最多的特徵作為分裂依據。
+
+而選項中的 A（F1 Score）、C（Recall）、D（Accuracy）都是整體模型評估指標，不是用來建構樹的依據。
+
+
+                </span>
+            </div>
+            
+            <!-- 教學目標 -->
+            <div style="margin-top: 5vh;">
+                <h5>教學目標：</h5>
+                <span>
+                    本題目的設計是為了讓學生了解決策樹的內部運作邏輯，特別是如何利用熵（Entropy）或資訊增益來進行節點分裂，進一步培養學生區分「模型訓練依據」與「模型評估指標」的能力。
+                </span>
+
+            </div>
+        </div>
+        
+        <!-- 子區塊：Python 資料分析 實作 -->
+        <!-- 此題型僅提供簡單指示，請同學根據所學製作個人網頁 -->
+        <div class="mb-4">
+            <h4>Python 資料分析 實作</h4>
+            <p>總共6題，完整的題目zip檔在下方，這邊僅展示其中一題。</p>
+            <h7>
+                <a href="https://drive.google.com/file/d/1q5c5PKZo8pBvI54_GvAuquyd7Hh4VW_C/view?usp=sharing">
+                    - Python 資料分析實作題目連結 -
+                </a>
+            </h7>
+
+            <div style="margin-top: 3vh;">
+                <h5>
+                    題目：Why are you Homo?
+                </h5>
+                <p>
+                    附件是一份與大學生相關的資料，總共1500筆(聲明: 沒有任何資管大二的資料集遭竊用)，看著這份資料集，突然好想知道(?)有沒有哪些feature是與其他有不同的分布?其中最不同的一組的p value又有多小呢?
+                </p>
+                <div>
+                    
+                    <img src="images/13th/黑客松下/螢幕擷取畫面 2025-06-06 150617.png" style="    width: 100%;">
+                    <p style="text-align: center;">資料集的一小部分</p>
+                </div>
+            </div>
+
+        </div>
+        
+        <div class="mb-4">
+            <h4>結果統計圖</h4>
+            <img src="images/13th/黑客松下/Category Breakdown.png" style="    width: 48%;">
+            <img src="images/13th/黑客松下/PointBreakdown.png" style="    width: 48%;">
+            <img src="images/13th/黑客松下/Score Distribution.png" style="    width: 100%;">
+            <img src="images/13th/黑客松下/Top10Users.png" style="    width: 100%;">
+        </div>
+    </div>
+</section>
+        
+        <!-- Section 3: 得獎照片 -->
+        <section id="awards">
+            <div class="sectioner-header text-center">
+                <h3>得獎照片</h3>
+                <span class="line"></span>
+            </div>
+            <div class="row text-center white-container">
+                <!-- For C++ awards -->
+                <div class="col-md-6">
+                    <h4>Python 網路爬蟲 - Kahoot</h4>
+                    <img src="images/13th/黑客松下/LINE_ALBUM_黑客松下_250606_13.jpg" alt="C++ 得獎照片" style="width: 100%;">
+                    <p style="font-size: 1.5vw;">得獎：許家瑋、劉育安、廖禾丰</p>
+                </div>
+                <!-- For WEB awards -->
+                <div class="col-md-6">
+                    <h4>Python 資料分析 - Kahoot</h4>
+                    <img src="images/13th/黑客松下/LINE_ALBUM_黑客松下_250606_26.jpg" alt="WEB 得獎照片" style="width: 100%;">
+                    <p style="font-size: 1.5vw;">得獎：蕭雅心、陳佳晨、羅婕瑜</p>
+                </div>
+            </div>
+            <div class="row text-center white-container">
+                <!-- For C++ awards -->
+                <div class="col-md-6">
+                    <h4>Python 網路爬蟲 - 實作</h4>
+                    <img src="images/13th/黑客松下/LINE_ALBUM_黑客松下_250606_33.jpg" alt="C++ 得獎照片" style="width: 100%;">
+                    <p style="font-size: 1.5vw;">得獎：蕭雅心、陳佳晨、林詩穎、汪禹廉</p>
+                </div>
+                <!-- For WEB awards -->
+                <div class="col-md-6">
+                    <h4>Python 資料分析 - 實作</h4>
+                    <img src="images/13th/黑客松下/LINE_ALBUM_黑客松下_250606_37.jpg" alt="WEB 得獎照片" style="width: 100%;">
+                    <p style="font-size: 1.5vw;">得獎：徐恩澤、劉育安、廖禾丰</p>
+                </div>
+            </div>            
+        </section>
+        
+
+</section>
+        
+        <!-- Section 5: 花絮照片 (Carousel) -->
+        <section id="highlights">
+            <div class="sectioner-header text-center">
+                <h3>花絮照片</h3>
+                <span class="line"></span>
+            </div>
+            <div id="highlightsCarousel" class="carousel slide white-container" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="images/13th/黑客松下/LINE_ALBUM_黑客松下_250606_40.jpg" class="d-block w-100" alt="花絮照片 1">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/13th/黑客松下/LINE_ALBUM_黑客松下_250606_29.jpg" class="d-block w-100" alt="花絮照片 2">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/13th/黑客松下/LINE_ALBUM_黑客松下_250606_16.jpg" class="d-block w-100" alt="花絮照片 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/13th/黑客松下/LINE_ALBUM_黑客松下_250606_2.jpg" class="d-block w-100" alt="花絮照片 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/13th/黑客松下/LINE_ALBUM_黑客松下_250606_1.jpg" class="d-block w-100" alt="花絮照片 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/13th/黑客松下/LINE_ALBUM_黑客松下_250606_3.jpg" class="d-block w-100" alt="花絮照片 3">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/13th/黑客松下/LINE_ALBUM_黑客松下_250606_20.jpg" class="d-block w-100" alt="花絮照片 3">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#highlightsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">上一頁</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#highlightsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">下一頁</span>
+                </button>
+            </div>
+        </section>
+        
+    </div>
+
+    <footer class="footer-copy">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-md-12">
+                    <p>2024 Website Designed by <a href="http://w3Template.com" target="_blank" rel="dofollow">W3 Template</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> 
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" 
+            integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" 
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+            crossorigin="anonymous"></script>
+    <script src="js/scrollIt.min.js"></script> 
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+        $(document).ready(function() {
+            $('#video-icon').on('click', function(e){
+                e.preventDefault();
+                $('.video-popup').css('display','flex');
+                $('.iframe-src').slideDown();
+            });
+            $('.video-popup').on('click', function(e){
+                var $target = e.target.nodeName;
+                var video_src = $(this).find('iframe').attr('src');
+                if($target != 'IFRAME'){
+                    $('.video-popup').fadeOut();
+                    $('.iframe-src').slideUp();
+                    $('.video-popup iframe').attr('src'," ");
+                    $('.video-popup iframe').attr('src',video_src);
+                }
+            });
+        });
+
+        $(window).on("scroll", function () {
+            var bodyScroll = $(window).scrollTop(),
+                navbar = $(".navbar");
+            if(bodyScroll > 50){
+                $('.navbar-logo img').attr('src','images/logo.jpg');
+                navbar.addClass("nav-scroll");
+            } else {
+                $('.navbar-logo img').attr('src','images/logo.jpg');
+                navbar.removeClass("nav-scroll");
+            }
+        });
+
+        $(window).on("load", function (){
+            var bodyScroll = $(window).scrollTop(),
+                navbar = $(".navbar");
+            if(bodyScroll > 50){
+                $('.navbar-logo img').attr('src','images/logo.jpg');
+                navbar.addClass("nav-scroll");
+            } else {
+                $('.navbar-logo img').attr('src','images/logo.jpg');
+                navbar.removeClass("nav-scroll");
+            }
+            $.scrollIt({
+                easing: 'swing',
+                scrollTime: 900,
+                activeClass: 'active',
+                onPageChange: null,
+                topOffset: -63
+            });
+        });
+    </script>
+</body>
+</html>
