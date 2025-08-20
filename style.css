@@ -238,7 +238,7 @@ h6 {
 }
 .about-btn {
 	color: #909090;
-	padding: 10px 110px;
+	padding: 10px 50px;
 	border: 2px solid #909090;
 	border-radius: 7px;
 	/* display: flex; */
@@ -676,7 +676,7 @@ h3 {
 .logo img{
 	max-width: 215px;
 	max-height: 130px;
-    width: calc(40% + 50px);
+    
     display: flex;
     margin-left: auto;
     margin-right: auto;
@@ -890,4 +890,16 @@ a.collapse_title :hover{
 	.slider .title span{
 		margin-top: 20px;
 	}
+}
+.about-btn ,.media-body{
+	text-decoration: none;
+	text-decoration-thickness: 0px;
+}
+.classTitle{
+	font-size: 35px !important;
+	font-weight: 700;
+}
+#classTitle2{
+	font-size: 25px !important;
+	font-weight: 600;
 }
