@@ -89,7 +89,63 @@ class HTMLInclude {
   }
 }
 
-// 頁面載入完成後自動載入組件
+const HTMLinclude = {
+    loadComponent: function(containerId, filePath) {
+        return new Promise((resolve, reject) => {
+            const container = document.getElementById(containerId);
+            if (!container) {
+                reject(new Error(`Container with id '${containerId}' not found`));
+                return;
+            }
+
+            // 顯示載入動畫
+            container.innerHTML = '<div class="loading-spinner"></div>';
+
+            fetch(filePath)
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.text();
+                })
+                .then(html => {
+                    container.innerHTML = html;
+                    
+                    // 執行載入的 HTML 中的 script 標籤
+                    const scripts = container.querySelectorAll('script');
+                    scripts.forEach(script => {
+                        const newScript = document.createElement('script');
+                        
+                        if (script.src) {
+                            // 外部腳本
+                            newScript.src = script.src;
+                        } else {
+                            // 內聯腳本
+                            newScript.textContent = script.textContent;
+                        }
+                        
+                        // 移除原始 script 並添加新的
+                        script.parentNode.removeChild(script);
+                        document.head.appendChild(newScript);
+                    });
+                    
+                    resolve();
+                })
+                .catch(error => {
+                    container.innerHTML = `<div class="error">載入失敗: ${error.message}</div>`;
+                    reject(error);
+                });
+        });
+    }
+};
+
+// 使用方式
 document.addEventListener('DOMContentLoaded', function() {
-  HTMLInclude.loadComponent('navbar-container', 'navbar.html');
+    HTMLinclude.loadComponent('navbar-container', 'navbar.html')
+        .then(() => {
+            console.log('Navbar loaded successfully with scripts executed');
+        })
+        .catch(error => {
+            console.error('Error loading navbar:', error);
+        });
 });
