@@ -1,0 +1,514 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="utf-8" />
+    <title>中山網路程式設計研究社</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.ico">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+          integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/logo.jpg" type="image/jpeg">
+    <link rel="shortcut icon" href="image/logo.jpg" type="image/jpeg">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .white-container {
+            background-color: #fff;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08); /* 調整陰影讓區塊更立體一點 */
+            box-sizing: border-box;
+            /* 已移除 border-left */
+        }
+        .white-container h1, h2, h3, h4, h5, h6 {
+            color: #3498db;
+            font-weight: 600;
+        }
+        #navbarSupportedContent{
+            justify-items: flex-end;
+            justify-content: flex-end;
+        }
+        
+        /* --- 修正連結樣式 --- */
+        /* 只針對不是按鈕 (.btn) 的連結設定顏色，避免衝突 */
+        .white-container a:not(.btn) {
+            color: #3498db;
+            text-decoration: none;
+            transition: 0.3s;
+            font-weight: 500;
+        }
+        .white-container a:not(.btn):hover {
+            color: #2980b9;
+            text-decoration: underline;
+        }
+        /* --- 結束修正 --- */
+
+        .sectioner-header {
+            padding-top: 60px;
+            padding-bottom: 20px;
+        }
+        .sectioner-header h3 {
+            color: #3498db;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+        .line {
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: #3498db;
+            margin: 0 auto;
+        }
+        .question_img {
+            width: 100%;
+            max-width: 48%;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid #eee;
+        }
+        .options-list li {
+            padding: 8px 15px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            background-color: #fdfdfd;
+            border: 1px solid #eee;
+        }
+        .options-list li strong {
+            color: #3498db;
+            margin-right: 10px;
+        }
+        .award-img {
+            width: 100%;
+            height: 300px; /* 固定高度保持整齊 */
+            object-fit: cover; /* 裁切填滿 */
+            border-radius: 8px;
+        }
+        .photo{
+            max-width: 200px;
+        }
+        #highlights{
+            margin-bottom: 100px;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="navbar-container" class="loading">
+        <div class="loading-spinner"></div>
+    </div>
+    <script src="include.js"></script>
+
+    <br><br><br>
+    
+    <div class="container">
+        
+        <section id="activity-description">
+            <div class="sectioner-header text-center">
+                <h3>114-1期末黑客松</h3>
+                <span class="line"></span>
+            </div>
+            <div class="white-container">
+                <p class="lead">本學期網研社社團即將告一段落，為了感謝辛苦的講師們、幹部們以及剛結束期末考的社員，為此舉辦一個期末聚會，進行小比賽驗收教學成果，並藉此促進社員感情。</p>
+                <hr>
+                
+                <h4><i class="fas fa-info-circle"></i> 活動內容</h4>
+                <p>C語言和WEB與實作競賽</p>
+                
+                <div class="row mt-4">
+                    <div class="col-md-5">
+                        <div class="p-3 bg-light rounded h-100">
+                            <h4><i class="far fa-calendar-alt"></i> 時間、地點</h4>
+                            <ul class="list-unstyled mt-3">
+                                <li class="mb-2"><strong>日期：</strong>2025年12月16日 (二)</li>
+                                <li><strong>場地：</strong>CM1019</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="p-3 bg-light rounded h-100">
+                            <h4><i class="fas fa-list-ol"></i> 活動流程</h4>
+                            <table class="table table-sm table-borderless mt-2">
+                                <tbody>
+                                    <tr><td style="width: 110px;">18:30 - 19:15</td><td>吃吃喝喝 & 期末總結</td></tr>
+                                    <tr><td>19:20 - 19:40</td><td>WEB 說明與 Kahoot 比賽</td></tr>
+                                    <tr><td>19:45 - 20:05</td><td>C 語言說明與 Kahoot 比賽</td></tr>
+                                    <tr><td>20:10 - 20:50</td><td>同學實作部分時間</td></tr>
+                                    <tr><td>20:50 - 21:00</td><td>頒獎 + 大合照</td></tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row pt-4">
+                    <div class="col-md-6">
+                        <h4>活動摘要：C 語言</h4>
+                        <p class="text-secondary small">基礎程式設計入門</p>
+                        <p>這次活動以 <strong>C 語言程式設計</strong> 為核心，搭配 Kahoot 小遊戲與程式實作。流程兼具概念檢測與實作練習，目的在於確認學生是否掌握課堂內容，並強化 C 語言能力。</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>活動摘要：Web 程式設計</h4>
+                        <p class="text-secondary small">網頁設計應用</p>
+                        <p>整合過去課堂觀念，透過 Kahoot 互動問答檢測基礎，並在實作階段依照指定樣式製作網頁，驗證是否能運用所學。</p>
+                    </div>
+                </div>
+
+                <div class="alert alert-secondary mt-3" role="alert">
+                    <h5 class="alert-heading"><i class="fas fa-exclamation-triangle"></i> 比賽規則</h5>
+                    <ol class="mb-0">
+                        <li>不可使用任何 AI 工具。</li>
+                        <li>可參考先前的講義或上網查詢語法。</li>
+                        <li>排名依照得分高低。</li>
+                        <li>不同題目會依據難易度給分。</li>
+                        <li>爬蟲需實際運行給講師看，不可複製同學程式碼。</li>
+                    </ol>
+                </div>
+            </div>
+        </section>
+        
+        <section id="question-description">
+            <div class="sectioner-header text-center">
+                <h3>題目舉例說明</h3>
+                <span class="line"></span>
+            </div>
+            
+            <div class="white-container">
+                
+                <div class="mb-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4>從零開始學 C 語言：基礎程式設計入門</h4>
+                        <a href="https://create.kahoot.it/share/c-kahoot/e20329cd-8544-4c5f-b6b6-4aa84a3fdba5" class="btn btn-outline-primary btn-sm" target="_blank">完整題目連結</a>
+                    </div>
+
+                    <div class="card bg-light border-0 p-3">
+                        <p class="mb-1"><strong><i class="fas fa-question-circle"></i> 題目：</strong></p>
+                        <p>在 C 語言中，如果在函式內部宣告一個 int 型態的區域變數但未賦予初始值，直接將其印出會發生什麼情況？</p>
+                        
+                        <div class="mt-2">
+                            <h5>選項：</h5>
+                            <ul class="options-list list-unstyled">
+                                <li><strong>A.</strong> 系統會自動將其初始化為0</li>
+                                <li><strong>B.</strong> 會印出一個不可預測的隨機值(垃圾值)</li>
+                                <li><strong>C.</strong> 程式會印出一個空字串</li>
+                                <li><strong>D.</strong> 程式會無法編譯並報錯</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion mt-3" id="accordionC">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                    查看答案與解析
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionC">
+                                <div class="accordion-body">
+                                    <p><strong>正確答案：B</strong></p>
+                                    <p><strong>解析：</strong>C 語言基於效能考量，不會主動幫區域變數「掃地」（初始化）。區域變數配置在堆疊 (Stack) 空間，若未初始化，讀取該位址會拿到殘留的舊資料（垃圾值）。</p>
+                                    <hr>
+                                    <p class="text-muted small"><strong>教學目標：</strong>理解 C 語言『效能優先』的記憶體配置邏輯，養成『宣告即初始化』的習慣。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="mb-5 mt-5">
+                    <h4>從零開始學 C 語言：實作題型</h4>
+                    <p class="text-muted">點擊圖片可查看大圖</p>
+                    <div class="d-flex flex-wrap justify-content-center">
+                        <img class="question_img" src="images/14th/黑客松上/C語言Q (1).jpg" alt="實作題目1">
+                        <img class="question_img" src="images/14th/黑客松上/C語言Q (2).jpg" alt="實作題目2">
+                        <img class="question_img" src="images/14th/黑客松上/C語言Q (3).jpg" alt="實作題目3">
+                        <img class="question_img" src="images/14th/黑客松上/C語言Q (4).jpg" alt="實作題目4">
+                    </div>
+                    <div class="text-center mt-3">
+                         <a href="https://drive.google.com/file/d/1lnEvtWkKVbWsg7LMWred8YING7167uqB/view?usp=drive_link" class="btn btn-outline-primary">查看更多題目</a>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="mb-5 mt-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4>Web 程式設計 Kahoot</h4>
+                        <a href="https://create.kahoot.it/share/web/200e0f72-3d4c-44e7-91ff-b55fee40d9da" class="btn btn-outline-primary btn-sm" target="_blank">完整題目連結</a>
+                    </div>
+
+                    <div class="card bg-light border-0 p-3">
+                        <p class="mb-1"><strong><i class="fas fa-question-circle"></i> 題目：</strong></p>
+                        <p>在 claw_machine.php 引用 game.jpg 的相對路徑為何?</p>
+                        <img src="images/14th/黑客松上/Web_question.webp" class="img-fluid rounded mb-3 photo" style="max-height: 200px;">
+                        
+                        <div>
+                            <h5>選項：</h5>
+                            <ul class="options-list list-unstyled">
+                                <li><strong>A.</strong> ../img/customer/game.jpg</li>
+                                <li><strong>B.</strong> ../../img/customer/game.jpg</li>
+                                <li><strong>C.</strong> ./img/customer/game.jpg</li>
+                                <li><strong>D.</strong> /img/customer/game.jpg</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion mt-3" id="accordionWeb">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingWeb">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseWeb" aria-expanded="false" aria-controls="collapseWeb">
+                                    查看答案與解析
+                                </button>
+                            </h2>
+                            <div id="collapseWeb" class="accordion-collapse collapse" aria-labelledby="headingWeb" data-bs-parent="#accordionWeb">
+                                <div class="accordion-body">
+                                    <p><strong>正確答案：B</strong></p>
+                                    <p><strong>解析：</strong>需往上一層目錄跳兩次才能回到根目錄找到 img 資料夾。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="mb-4 mt-5">
+                    <h4>Web 程式設計 實作</h4>
+                    <p>總共4題，3題+1題加分題。</p>
+                    <a href="https://hackmd.io/@TycaC6flTSex7SRYOPVa9w/HJVok9_MZe" class="btn btn-link px-0">Web程式設計實作題目連結 <i class="fas fa-external-link-alt"></i></a>
+
+                    <div class="row mt-4">
+                        <div class="col-md-6">
+                            <h5>題目A：Navbar & Hero</h5>
+                            <img src="images/14th/黑客松上/web_question1.png" class="img-fluid border rounded">
+                        </div>
+                        <div class="col-md-6">
+                            <h5>題目B：Javascript 互動</h5>
+                            <p class="small text-muted">點擊送出後顯示列表，需包含 CSS 設計。</p>
+                            <img src="images/14th/黑客松上/web_question2.png" class="img-fluid border rounded mb-2">
+                            <img src="images/14th/黑客松上/web_question4.png" class="img-fluid border rounded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="awards">
+            <div class="sectioner-header text-center">
+                <h3>得獎照片</h3>
+                <span class="line"></span>
+            </div>
+            
+            <div class="white-container">
+                <div class="row">
+                    <div class="col-md-6 mb-5">
+                        <h4 class="text-center mb-3">C 語言 Kahoot 得獎</h4>
+                        <div id="carouselCKahoot" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselCKahoot" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#carouselCKahoot" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#carouselCKahoot" data-bs-slide-to="2"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/14th/黑客松上/C_kahoot1.jpg" class="d-block w-100 award-img" alt="得獎照片">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/14th/黑客松上/C_kahoot2.jpg" class="d-block w-100 award-img" alt="得獎照片">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/14th/黑客松上/C_kahoot3.jpg" class="d-block w-100 award-img" alt="得獎照片">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCKahoot" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselCKahoot" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <p class="text-center mt-2">得獎：林思芸、柯絜甯、高定驤</p>
+                    </div>
+
+                    <div class="col-md-6 mb-5">
+                        <h4 class="text-center mb-3">Web Kahoot 得獎</h4>
+                        <div id="carouselWebKahoot" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselWebKahoot" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#carouselWebKahoot" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#carouselWebKahoot" data-bs-slide-to="2"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/14th/黑客松上/web_kahoot1.jpg" class="d-block w-100 award-img" alt="得獎照片">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/14th/黑客松上/web_kahoot2.jpg" class="d-block w-100 award-img" alt="得獎照片">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/14th/黑客松上/web_kahoot3.jpg" class="d-block w-100 award-img" alt="得獎照片">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselWebKahoot" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselWebKahoot" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <p class="text-center mt-2">得獎：李蘇容、汪泓易、汪俊廷</p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h4 class="text-center mb-3">C 語言實作得獎</h4>
+                        <div id="carouselCImpl" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselCImpl" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#carouselCImpl" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#carouselCImpl" data-bs-slide-to="2"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/14th/黑客松上/C_reward1.jpg" class="d-block w-100 award-img" alt="得獎照片">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/14th/黑客松上/C_reward2.jpg" class="d-block w-100 award-img" alt="得獎照片">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/14th/黑客松上/C_reward3.jpg" class="d-block w-100 award-img" alt="得獎照片">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselCImpl" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselCImpl" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <p class="text-center mt-2">得獎：白成君、林思芸、柯絜甯、高定驤</p>
+                    </div>
+
+                    <div class="col-md-6">
+                        <h4 class="text-center mb-3">Web 實作得獎</h4>
+                        <div id="carouselWebImpl" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselWebImpl" data-bs-slide-to="0" class="active"></button>
+                                <button type="button" data-bs-target="#carouselWebImpl" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#carouselWebImpl" data-bs-slide-to="2"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/14th/黑客松上/web_reward1.jpg" class="d-block w-100 award-img" alt="得獎照片">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/14th/黑客松上/web_reward2.jpg" class="d-block w-100 award-img" alt="得獎照片">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/14th/黑客松上/web_reward3.jpg" class="d-block w-100 award-img" alt="得獎照片">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselWebImpl" data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselWebImpl" data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <p class="text-center mt-2">得獎：林柏翰、李蘇容、汪泓易</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        
+        <section id="highlights">
+            <div class="sectioner-header text-center">
+                <h3>花絮照片</h3>
+                <span class="line"></span>
+            </div>
+            <div id="highlightsCarousel" class="carousel slide white-container" data-bs-ride="carousel">
+                <div class="carousel-inner rounded">
+                    <div class="carousel-item active">
+                        <img src="images/14th/黑客松上/photo1.webp" class="d-block w-100" alt="花絮照片">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/14th/黑客松上/photo2.webp" class="d-block w-100" alt="花絮照片">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/14th/黑客松上/photo3.webp" class="d-block w-100" alt="花絮照片">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/14th/黑客松上/photo4.webp" class="d-block w-100" alt="花絮照片">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/14th/黑客松上/photo5.webp" class="d-block w-100" alt="花絮照片">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/14th/黑客松上/photo6.webp" class="d-block w-100" alt="花絮照片">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/14th/黑客松上/photo7.webp" class="d-block w-100" alt="花絮照片">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#highlightsCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">上一頁</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#highlightsCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">下一頁</span>
+                </button>
+            </div>
+        </section>
+        
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script> 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" 
+            crossorigin="anonymous"></script>
+    <script src="js/scrollIt.min.js"></script> 
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+        
+        $(window).on("scroll", function () {
+            var bodyScroll = $(window).scrollTop(),
+                navbar = $(".navbar");
+            if(bodyScroll > 50){
+                $('.navbar-logo img').attr('src','images/logo.jpg');
+                navbar.addClass("nav-scroll");
+            } else {
+                $('.navbar-logo img').attr('src','images/logo.jpg');
+                navbar.removeClass("nav-scroll");
+            }
+        });
+
+        $.scrollIt({
+            easing: 'swing',
+            scrollTime: 900,
+            activeClass: 'active',
+            onPageChange: null,
+            topOffset: -63
+        });
+    </script>
+</body>
+</html>
