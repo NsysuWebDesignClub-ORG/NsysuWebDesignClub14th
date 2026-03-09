@@ -896,10 +896,15 @@ a.collapse_title :hover{
 	text-decoration-thickness: 0px;
 }
 .classTitle{
-	font-size: 35px !important;
+	font-size: 30px !important;
 	font-weight: 700;
 }
 #classTitle2{
 	font-size: 25px !important;
+	font-weight: 600;
+}
+
+.smallClassTitle{
+	font-size: 27px !important;
 	font-weight: 600;
 }
