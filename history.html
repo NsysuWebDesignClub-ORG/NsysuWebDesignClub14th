@@ -7,41 +7,106 @@
     <link rel="icon" type="image/x-icon" href="/images/logo.ico">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
     <link rel="stylesheet" href="css/animate.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-    <!-- Update Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css"
+        integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="style.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-    <!-- Font Google -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+        integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        .simple-box {
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 20px;
+            margin-bottom: 25px;
+            background-color: #fafafa;
+            height: 100%;
+        }
+
+        .simple-box h4 {
+            color: #01295c;
+            /* 使用原本的深藍主色 */
+            border-bottom: 2px solid #01295c;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        .site-link {
+            display: inline-block;
+            margin-top: 10px;
+            color: #01295c;
+            text-decoration: none;
+            font-weight: bold;
+            border: 1px solid #01295c;
+            padding: 5px 15px;
+            border-radius: 3px;
+            transition: 0.2s;
+        }
+
+        .site-link:hover {
+            background-color: #01295c;
+            color: #fff;
+            text-decoration: none;
+        }
+
+        .member-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .member-list li {
+            display: inline-block;
+            margin-right: 15px;
+            margin-bottom: 10px;
+            font-size: 15px;
+            color: #333;
+        }
+
+        .role-title {
+            font-weight: bold;
+            color: #01295c;
+            margin-right: 5px;
+        }
+
+        .section-title {
+            margin-top: 40px;
+            margin-bottom: 20px;
+            color: #333;
+            font-weight: bold;
+            border-left: 5px solid #01295c;
+            padding-left: 15px;
+            text-align: left;
+        }
+
+        .history-desc {
+            line-height: 1.8;
+            color: #444;
+            text-align: justify;
+        }
+
+        .col-lg-6 {
+            margin: 10px 0px;
+        }
+    </style>
 </head>
-<script>
-    $(document).ready(function() {
-        $('.collapse').collapse();
-    });
-</script>
 
 <body>
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-    <!---------------------------- Navbar所需要的code --------------------------------------->
+
     <div id="navbar-container" class="loading">
         <div class="loading-spinner"></div>
     </div>
     <script src="include.js"></script>
-    <!-------------------------------- End Navbar ------------------------------------------>
-    
-
     <br><br><br>
     <div class="container">
         <div class="row">
             <div class="col-md-12">
-                <div class="sectioner-header text-center ">
+                <div class="sectioner-header text-center">
                     <h3>國立中山大學 網路程式設計研究社</h3>
                     <span class="line"></span>
                     <p>歷屆網研</p>
@@ -49,156 +114,170 @@
             </div>
         </div>
 
-        <br><br><br>
-        <section>
-            <div class="title-link">
-                <h2><a href="https://nsysuwebdesignclub-org.github.io/NsysuWebDesignClub13th/index.html" target="_blank">第十三屆網路程式設計研究社</a></h2>
+        <div class="row">
+            <div class="col-12">
+                <h3 class="section-title">歷屆網站</h3>
             </div>
-            <div class="title-link">
-                <h2><a href="https://nsysuwebdesignclub-org.github.io/NsysuWebDesignClub12th/index.html" target="_blank">第十二屆網路程式設計研究社</a></h2>
-            </div>
+        </div>
 
-            <div class="title-link">
-                <h2><a href="https://3m0oimglzdaks8uz5dt9ra.on.drv.tw/%E7%B6%B2%E7%A0%94/#club_intro" target="_blank">第十一屆網路程式設計研究社</a></h2>
+        <div class="row text-center">
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                <div class="simple-box">
+                    <h4>第十三屆</h4>
+                    <a href="https://nsysuwebdesignclub-org.github.io/NsysuWebDesignClub13th/index.html" target="_blank"
+                        class="site-link">前往網站 &raquo;</a>
+                </div>
             </div>
-            <div class="title-link">
-                <h2><a href="https://sites.google.com/view/1101wpdc/%E9%A6%96%E9%A0%81" target="_blank">第十屆網路程式設計研究社</a></h2>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                <div class="simple-box">
+                    <h4>第十二屆</h4>
+                    <a href="https://nsysuwebdesignclub-org.github.io/NsysuWebDesignClub12th/index.html" target="_blank"
+                        class="site-link">前往網站 &raquo;</a>
+                </div>
             </div>
-            <div class="title-link">
-                <h2><a href="https://sites.google.com/view/1091wpdc/%E9%A6%96%E9%A0%81" target="_blank">第九屆網路程式設計研究社</a></h2>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                <div class="simple-box">
+                    <h4>第十一屆</h4>
+                    <a href="https://3m0oimglzdaks8uz5dt9ra.on.drv.tw/%E7%B6%B2%E7%A0%94/#club_intro" target="_blank"
+                        class="site-link">前往網站 &raquo;</a>
+                </div>
             </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                <div class="simple-box">
+                    <h4>第十屆</h4>
+                    <a href="https://sites.google.com/view/1101wpdc/%E9%A6%96%E9%A0%81" target="_blank"
+                        class="site-link">前往網站 &raquo;</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 mb-3">
+                <div class="simple-box">
+                    <h4>第九屆</h4>
+                    <a href="https://sites.google.com/view/1091wpdc/%E9%A6%96%E9%A0%81" target="_blank"
+                        class="site-link">前往網站 &raquo;</a>
+                </div>
+            </div>
+        </div>
 
-            <!-- 第八屆 -->
-            <p class="d-inline-flex gap-1">
-                <a class="collapse_title" data-bs-toggle="collapse" href="#8th" role="button" aria-expanded="false" aria-controls="8th">
-        第八屆網路程式設計研究社
-      </a>
-            </p>
-            <div class="collapse" id="8th">
-                <div class="card card-body collapse_content">
-                    <p>社長 陳琨翔</p>
-                    <p>副社長 施怡安</p>
-                    <p>活動長 杜俞萱</p>
-                    <p>課程長 鄭子婷</p>
-                    <p>課程長 李欣倪</p>
-                    <p>資訊長 郭家銘</p>
-                    <p>資訊長 林子紘</p>
-                    <p>財務長 康芸瑄</p>
+        <hr class="my-5">
+
+        <div class="row">
+            <div class="col-12">
+                <h3 class="section-title">歷屆幹部名單</h3>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="simple-box">
+                    <h4>第八屆</h4>
+                    <ul class="member-list">
+                        <li><span class="role-title">社長</span>陳琨翔</li>
+                        <li><span class="role-title">副社長</span>施怡安</li>
+                        <li><span class="role-title">活動長</span>杜俞萱</li>
+                        <li><span class="role-title">課程長</span>鄭子婷、李欣倪</li>
+                        <li><span class="role-title">資訊長</span>郭家銘、林子紘</li>
+                        <li><span class="role-title">財務長</span>康芸瑄</li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- 第七屆 -->
-            <p class="d-inline-flex gap-1">
-                <a class="collapse_title" data-bs-toggle="collapse" href="#7th" role="button" aria-expanded="false" aria-controls="7th">
-        第七屆網路程式設計研究社
-      </a>
-            </p>
-            <div class="collapse" id="7th">
-                <div class="card card-body collapse_content">
-                    <p>社長 沈書安</p>
-                    <p>副社長 黃靖涵</p>
-                    <p>活動長 何品萱</p>
-                    <p>課程長 郭宗翰</p>
-                    <p>課程長 楊雅汝</p>
-                    <p>資訊長 蔡柏毅</p>
-                    <p>資訊長 劉晉瑋</p>
-                    <p>財務長 吳佩秦</p>
+            <div class="col-lg-6">
+                <div class="simple-box">
+                    <h4>第七屆</h4>
+                    <ul class="member-list">
+                        <li><span class="role-title">社長</span>沈書安</li>
+                        <li><span class="role-title">副社長</span>黃靖涵</li>
+                        <li><span class="role-title">活動長</span>何品萱</li>
+                        <li><span class="role-title">課程長</span>郭宗翰、楊雅汝</li>
+                        <li><span class="role-title">資訊長</span>蔡柏毅、劉晉瑋</li>
+                        <li><span class="role-title">財務長</span>吳佩秦</li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- 第六屆 -->
-            <p class="d-inline-flex gap-1">
-                <a class="collapse_title" data-bs-toggle="collapse" href="#6th" role="button" aria-expanded="false" aria-controls="6th">
-        第六屆網路程式設計研究社
-      </a>
-            </p>
-            <div class="collapse" id="6th">
-                <div class="card card-body collapse_content">
-                    <p>社長 盧宇涵</p>
-                    <p>副社長 賴冠霖</p>
-                    <p>活動長 陳 曦</p>
-                    <p>課程長 張卜方</p>
-                    <p>課程長 薛佳恩</p>
-                    <p>資訊長 王品堯</p>
-                    <p>資訊長 蔡道毅</p>
-                    <p>財務長 陳品蓉</p>
+            <div class="col-lg-6">
+                <div class="simple-box">
+                    <h4>第六屆</h4>
+                    <ul class="member-list">
+                        <li><span class="role-title">社長</span>盧宇涵</li>
+                        <li><span class="role-title">副社長</span>賴冠霖</li>
+                        <li><span class="role-title">活動長</span>陳曦</li>
+                        <li><span class="role-title">課程長</span>張卜方、薛佳恩</li>
+                        <li><span class="role-title">資訊長</span>王品堯、蔡道毅</li>
+                        <li><span class="role-title">財務長</span>陳品蓉</li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- 第五屆 -->
-            <p class="d-inline-flex gap-1">
-                <a class="collapse_title" data-bs-toggle="collapse" href="#5th" role="button" aria-expanded="false" aria-controls="5th">
-        第五屆網路程式設計研究社
-      </a>
-            </p>
-            <div class="collapse" id="5th">
-                <div class="card card-body collapse_content">
-                    <p>社團指導教授:李偉柏教授</p>
-                    <p>社長 盧宇涵 </p>
-                    <p>副社長 賴冠霖</p>
-                    <p>課程長 張卜方、薛佳恩</p>
-                    <p>資訊長 蔡道毅、王品堯</p>
-                    <p>財務長 陳品蓉 </p>
-                    <p>活動長 陳曦</p>
+            <div class="col-lg-6">
+                <div class="simple-box">
+                    <h4>第五屆</h4>
+                    <div class="mb-2"><span class="role-title">指導教授</span>李偉柏教授</div>
+                    <ul class="member-list">
+                        <li><span class="role-title">社長</span>盧宇涵</li>
+                        <li><span class="role-title">副社長</span>賴冠霖</li>
+                        <li><span class="role-title">活動長</span>陳曦</li>
+                        <li><span class="role-title">課程長</span>張卜方、薛佳恩</li>
+                        <li><span class="role-title">資訊長</span>蔡道毅、王品堯</li>
+                        <li><span class="role-title">財務長</span>陳品蓉</li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- 第四屆 -->
-            <p class="d-inline-flex gap-1">
-                <a class="collapse_title" data-bs-toggle="collapse" href="#4th" role="button" aria-expanded="false" aria-controls="4th">
-        第四屆網路程式設計研究社
-      </a>
-            </p>
-            <div class="collapse" id="4th">
-                <div class="card card-body collapse_content">
-                    <p>老貓、鄒諺廷、黃升泰、郭庭妤、黃志家、莊般若</p>
+            <div class="col-lg-6">
+                <div class="simple-box">
+                    <h4>第四屆</h4>
+                    <ul class="member-list">
+                        <li>老貓</li>
+                        <li>鄒諺廷</li>
+                        <li>黃升泰</li>
+                        <li>郭庭妤</li>
+                        <li>黃志家</li>
+                        <li>莊般若</li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- 第三屆 -->
-            <p class="d-inline-flex gap-1">
-                <a class="collapse_title" data-bs-toggle="collapse" href="#3rd" role="button" aria-expanded="false" aria-controls="3rd">
-        第三屆網路程式設計研究社
-      </a>
-            </p>
-            <div class="collapse" id="3rd">
-                <div class="card card-body collapse_content">
-                    <p>社長 郭珮瑜</p>
-                    <p>副社長 林祖安</p>
-                    <p>活動長 許凱惟</p>
-                    <p>課程長 翁珮玲、曾于瑞</p>
-                    <p>資訊長 羅珮綺、潘虹岳</p>
-                    <p>財務長 鄭盼盼</p>
+            <div class="col-lg-6">
+                <div class="simple-box">
+                    <h4>第三屆</h4>
+                    <ul class="member-list">
+                        <li><span class="role-title">社長</span>郭珮瑜</li>
+                        <li><span class="role-title">副社長</span>林祖安</li>
+                        <li><span class="role-title">活動長</span>許凱惟</li>
+                        <li><span class="role-title">課程長</span>翁珮玲、曾于瑞</li>
+                        <li><span class="role-title">資訊長</span>羅珮綺、潘虹岳</li>
+                        <li><span class="role-title">財務長</span>鄭盼盼</li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- 第二屆 -->
-            <p class="d-inline-flex gap-1">
-                <a class="collapse_title" data-bs-toggle="collapse" href="#2nd" role="button" aria-expanded="false" aria-controls="2nd">
-        第二屆網路程式設計研究社
-      </a>
-            </p>
-            <div class="collapse" id="2nd">
-                <div class="card card-body collapse_content">
-                    <p>李庭葦、王朝暐、王昱掄、曾玉輝、書世祐、黃新晴</p>
+            <div class="col-lg-6">
+                <div class="simple-box">
+                    <h4>第二屆</h4>
+                    <ul class="member-list">
+                        <li>李庭葦</li>
+                        <li>王朝暐</li>
+                        <li>王昱掄</li>
+                        <li>曾玉輝</li>
+                        <li>書世祐</li>
+                        <li>黃新晴</li>
+                    </ul>
                 </div>
             </div>
 
-            <!-- 初代 -->
-            <p class="d-inline-flex gap-1">
-                <a class="collapse_title" data-bs-toggle="collapse" href="#1st" role="button" aria-expanded="false" aria-controls="1st">
-        初代網路程式設計研究社
-      </a>
-            </p>
-            <div class="collapse" id="1st">
-                <div class="card card-body collapse_content">
-                    <p>網路程式設計研究社成立於2012年02月，由國立中山大學資訊管理學系101級學生郭軒宇、陳致豪、梁展易、林毓珊、張瑞芬、蔣佳妙、趙珮瑜等人發起，並由黃三益教授、陳嘉玫教授等老師指導。</p>
-                    <p>本社團的目的在於協助中山資管學生藉由社團的方式，團體學習專案開發、網頁設計等資管必備技能，提早學習與應用課堂外的專業知識。</p>
+            <div class="col-lg-6">
+                <div class="simple-box">
+                    <h4>初代</h4>
+                    <p class="history-desc">網路程式設計研究社成立於 2012 年 02 月，由國立中山大學資訊管理學系 101
+                        級學生郭軒宇、陳致豪、梁展易、林毓珊、張瑞芬、蔣佳妙、趙珮瑜等人發起，並由黃三益教授、陳嘉玫教授等老師指導。</p>
+                    <p class="history-desc mb-0">本社團的目的在於協助中山資管學生藉由社團的方式，團體學習專案開發、網頁設計等資管必備技能，提早學習與應用課堂外的專業知識。</p>
                 </div>
             </div>
-        </section>
+        </div>
     </div>
-        <section class="download section-padding" data-scroll-index='7' id="7" style="margin-top: 20px;">
+
+    <section class="download section-padding" data-scroll-index='7' id="7" style="margin-top: 40px;">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -213,18 +292,17 @@
                         <ul>
                             <li class="wow fadeInUp" data-wow-delay="0.4s">
                                 <a href="https://www.facebook.com/NsysuWpdca" target="_blank">
-                                    <img src="images/fb_icon.png" style="width:50px; height:50px" />
+                                    <img src="images/fb_icon.png" style="width:50px; height:50px" alt="FB粉絲專頁" />
                                     <span class="white">粉絲專頁</span>
                                 </a>
                             </li>
 
                             <li class="wow fadeInUp" data-wow-delay="0.7s">
                                 <a href="https://www.facebook.com/groups/NsysuMisClub" target="_blank">
-                                    <img src="images/fb_icon.png" style="width:50px; height:50px" />
+                                    <img src="images/fb_icon.png" style="width:50px; height:50px" alt="FB社團" />
                                     <span class="white">FB社團</span>
                                 </a>
                             </li>
-
                         </ul>
                     </div>
                 </div>
@@ -232,76 +310,67 @@
         </div>
     </section>
 
-
-       
-</body>
-
-</html>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
-<!-- scrollIt js -->
-<script src="js/scrollIt.min.js"></script>
-<script src="js/wow.min.js"></script>
-<script>
-    wow = new WOW();
-    wow.init();
-    $(document).ready(function(e) {
-
-        $('#video-icon').on('click', function(e) {
-            e.preventDefault();
-            $('.video-popup').css('display', 'flex');
-            $('.iframe-src').slideDown();
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"
+        integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T"
+        crossorigin="anonymous"></script>
+    <script src="js/scrollIt.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        wow = new WOW();
+        wow.init();
+        $(document).ready(function (e) {
+            $('#video-icon').on('click', function (e) {
+                e.preventDefault();
+                $('.video-popup').css('display', 'flex');
+                $('.iframe-src').slideDown();
+            });
+            $('.video-popup').on('click', function (e) {
+                var $target = e.target.nodeName;
+                var video_src = $(this).find('iframe').attr('src');
+                if ($target != 'IFRAME') {
+                    $('.video-popup').fadeOut();
+                    $('.iframe-src').slideUp();
+                    $('.video-popup iframe').attr('src', " ");
+                    $('.video-popup iframe').attr('src', video_src);
+                }
+            });
         });
-        $('.video-popup').on('click', function(e) {
-            var $target = e.target.nodeName;
-            var video_src = $(this).find('iframe').attr('src');
-            if ($target != 'IFRAME') {
-                $('.video-popup').fadeOut();
-                $('.iframe-src').slideUp();
-                $('.video-popup iframe').attr('src', " ");
-                $('.video-popup iframe').attr('src', video_src);
+
+        $(window).on("scroll", function () {
+            var bodyScroll = $(window).scrollTop(),
+                navbar = $(".navbar");
+
+            if (bodyScroll > 50) {
+                $('.navbar-logo img').attr('src', 'images/logo.jpg');
+                navbar.addClass("nav-scroll");
+            } else {
+                $('.navbar-logo img').attr('src', 'images/logo.jpg');
+                navbar.removeClass("nav-scroll");
             }
         });
 
-        //$('.slider').bxSlider({
-        //pager: false
-        //});
-    });
+        $(window).on("load", function () {
+            var bodyScroll = $(window).scrollTop(),
+                navbar = $(".navbar");
 
-    $(window).on("scroll", function() {
+            if (bodyScroll > 50) {
+                $('.navbar-logo img').attr('src', 'images/logo.jpg');
+                navbar.addClass("nav-scroll");
+            } else {
+                $('.navbar-logo img').attr('src', 'images/logo.jpg');
+                navbar.removeClass("nav-scroll");
+            }
 
-        var bodyScroll = $(window).scrollTop(),
-            navbar = $(".navbar");
-
-        if (bodyScroll > 50) {
-            $('.navbar-logo img').attr('src', 'images/logo.jpg');
-            navbar.addClass("nav-scroll");
-
-        } else {
-            $('.navbar-logo img').attr('src', 'images/logo.jpg');
-            navbar.removeClass("nav-scroll");
-        }
-
-    });
-    $(window).on("load", function() {
-        var bodyScroll = $(window).scrollTop(),
-            navbar = $(".navbar");
-
-        if (bodyScroll > 50) {
-            $('.navbar-logo img').attr('src', 'images/logo.jpg');
-            navbar.addClass("nav-scroll");
-        } else {
-            $('.navbar-logo img').attr('src', 'images/logo.jpg');
-            navbar.removeClass("nav-scroll");
-        }
-
-        $.scrollIt({
-
-            easing: 'swing', // the easing function for animation
-            scrollTime: 900, // how long (in ms) the animation takes
-            activeClass: 'active', // class given to the active nav element
-            onPageChange: null, // function(pageIndex) that is called when page is changed
-            topOffset: -63
+            $.scrollIt({
+                easing: 'swing',
+                scrollTime: 900,
+                activeClass: 'active',
+                onPageChange: null,
+                topOffset: -63
+            });
         });
-    });
-</script>
+    </script>
+</body>
+
+</html>
