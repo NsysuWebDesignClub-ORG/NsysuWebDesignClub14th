@@ -437,10 +437,11 @@ h6 {
 }
 
 .image-cell img {
-    width: 100%;
-	max-width: 300px;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    max-width: 100%;
 	display: inline;
-    height: auto;
 }
 .faq {
 	background: #fafafa;

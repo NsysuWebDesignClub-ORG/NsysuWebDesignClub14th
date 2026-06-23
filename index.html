@@ -420,8 +420,7 @@
                     <!-- 切換按鈕 -->
                     <div class="title-link">
                         <a href="javascript:void(0)" onclick="toggleMember('114-1')">114-1社課報名名單</a>
-                        <a href="javascript:void(0)" style="display: none;"
-                            onclick="toggleMember('114-2')">114-2社課報名名單</a>
+                        <a href="javascript:void(0)" onclick="toggleMember('114-2')">114-2社課報名名單</a>
                     </div>
 
                     <!-- 114-1 成員名單 -->
@@ -626,47 +625,160 @@
                     </div>
 
                     <!-- 114-2 成員名單 -->
-                    <!-- <div id="member-114-2" style="display: none;">
-                    <div class="wrap">
-                        <table id="member">
-                            <thead>
-                                <tr>
-                                    <th>編號</th>
-                                    <th>姓名</th>
-                                    <th>系級</th>
-                                    <th>報名課程</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr><td>1</td><td>徐恩澤</td><td>資管117</td><td>C++程式設計, Web網頁設計</td></tr>
-                                <tr><td>2</td><td>羅榆翔</td><td>資管115</td><td>C++程式設計</td></tr>
-                                <tr><td>3</td><td>張微咏</td><td>資管117</td><td>Web網頁設計</td></tr>
-                                <tr><td>4</td><td>廖禾丰</td><td>資管117</td><td>Web網頁設計</td></tr>
-                                <tr><td>5</td><td>謝承祐</td><td>資管117</td><td>C++程式設計, Web網頁設計</td></tr>
-                                <tr><td>6</td><td>趙子珺</td><td>資管117</td><td>C++程式設計, Web網頁設計</td></tr>
-                                <tr><td>7</td><td>劉育安</td><td>資管117</td><td>C++程式設計</td></tr>
-                                <tr><td>8</td><td>謝昀嬡</td><td>資管116</td><td>C++程式設計, Web網頁設計</td></tr>
-                                <tr><td>9</td><td>郭家綺</td><td>資管117</td><td>C++程式設計, Web網頁設計</td></tr>
-                                <tr><td>10</td><td>傅柏皓</td><td>物理116</td><td>Web網頁設計</td></tr>
-                                <tr><td>11</td><td>徐緯君</td><td>資管116</td><td>Web網頁設計</td></tr>
-                                <tr><td>12</td><td>王信淳</td><td>資管117</td><td>C++程式設計, Web網頁設計</td></tr>
-                                <tr><td>13</td><td>葉冠廷</td><td>資管117</td><td>Web網頁設計</td></tr>
-                                <tr><td>14</td><td>阮子珊</td><td>資管117</td><td>C++程式設計, Web網頁設計</td></tr>
-                                <tr><td>15</td><td>陳粢渝</td><td>資管117</td><td>C++程式設計, Web網頁設計</td></tr>
-                                <tr><td>16</td><td>王研安</td><td>資管117</td><td>C++程式設計</td></tr>
-                                <tr><td>17</td><td>李秉宸</td><td>資管117</td><td>C++程式設計, Web網頁設計</td></tr>
-                                <tr><td>18</td><td>羅婕瑜</td><td>資管116</td><td>Web網頁設計</td></tr>
-                                <tr><td>19</td><td>盧安琪</td><td>資管116</td><td>Web網頁設計</td></tr>
-                                <tr><td>20</td><td>劉信宏</td><td>電機116</td><td>C++程式設計</td></tr>
-                                <tr><td>21</td><td>邱瑀婕</td><td>材光系</td><td>C++程式設計</td></tr>
-                                <tr><td>22</td><td>翁圓舒</td><td>資管117</td><td>C++程式設計, Web網頁設計</td></tr>
-                                <tr><td>23</td><td>張桔睿</td><td>生醫117</td><td>Web網頁設計</td></tr>
-                                <tr><td>24</td><td>上官語恬</td><td>資管117</td><td>C++程式設計</td></tr>
-                                <tr><td>25</td><td>查欣瑜</td><td>資管116</td><td>Web網頁設計</td></tr>
-                            </tbody>
-                        </table>
+                    <div id="member-114-2" style="display: none;">
+                        <div class="wrap">
+                            <table id="member">
+                                <thead>
+                                    <tr>
+                                        <th>編號</th>
+                                        <th>姓名</th>
+                                        <th>系級</th>
+                                        <th>報名課程</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>陳家晨</td>
+                                        <td>資管117</td>
+                                        <td>React</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>林思芸</td>
+                                        <td>資管118</td>
+                                        <td>深度學習</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3</td>
+                                        <td>張微咏</td>
+                                        <td>資管117</td>
+                                        <td>深度學習, React</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4</td>
+                                        <td>柯絜甯</td>
+                                        <td>資管118</td>
+                                        <td>深度學習, React</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5</td>
+                                        <td>白成君</td>
+                                        <td>資管118</td>
+                                        <td>深度學習</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6</td>
+                                        <td>翁圓舒</td>
+                                        <td>資管117</td>
+                                        <td>深度學習, React</td>
+                                    </tr>
+                                    <tr>
+                                        <td>7</td>
+                                        <td>吳英綺</td>
+                                        <td>資管118</td>
+                                        <td>深度學習, React</td>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>賴昱璇</td>
+                                        <td>資管116</td>
+                                        <td>深度學習</td>
+                                    </tr>
+                                    <tr>
+                                        <td>9</td>
+                                        <td>郭芳妤</td>
+                                        <td>資管117</td>
+                                        <td>React</td>
+                                    </tr>
+                                    <tr>
+                                        <td>10</td>
+                                        <td>陳顥予</td>
+                                        <td>資管118</td>
+                                        <td>深度學習</td>
+                                    </tr>
+                                    <tr>
+                                        <td>11</td>
+                                        <td>林詩穎</td>
+                                        <td>資管117</td>
+                                        <td>深度學習, React</td>
+                                    </tr>
+                                    <tr>
+                                        <td>12</td>
+                                        <td>汪俊廷</td>
+                                        <td>資管118</td>
+                                        <td>深度學習, React</td>
+                                    </tr>
+                                    <tr>
+                                        <td>13</td>
+                                        <td>方敬棠</td>
+                                        <td>資管115</td>
+                                        <td>深度學習</td>
+                                    </tr>
+                                    <tr>
+                                        <td>14</td>
+                                        <td>陳粢渝</td>
+                                        <td>資管117</td>
+                                        <td>深度學習, React</td>
+                                    </tr>
+                                    <tr>
+                                        <td>15</td>
+                                        <td>楊雅安</td>
+                                        <td>資管116</td>
+                                        <td>深度學習, React</td>
+                                    </tr>
+                                    <tr>
+                                        <td>16</td>
+                                        <td>蔡以恩</td>
+                                        <td>資管118</td>
+                                        <td>深度學習</td>
+                                    </tr>
+                                    <tr>
+                                        <td>17</td>
+                                        <td>凌于婷</td>
+                                        <td>資管117</td>
+                                        <td>深度學習, React</td>
+                                    </tr>
+                                    <tr>
+                                        <td>18</td>
+                                        <td>吳岱庭</td>
+                                        <td>資管118</td>
+                                        <td>React</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19</td>
+                                        <td>張渝婷</td>
+                                        <td>資管117</td>
+                                        <td>深度學習, React</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20</td>
+                                        <td>李蘇容</td>
+                                        <td>資管118</td>
+                                        <td>深度學習, React</td>
+                                    </tr>
+                                    <tr>
+                                        <td>21</td>
+                                        <td>陳佳晨</td>
+                                        <td>資管117</td>
+                                        <td>深度學習, React</td>
+                                    </tr>
+                                    <tr>
+                                        <td>22</td>
+                                        <td>王芊婷</td>
+                                        <td>資管115</td>
+                                        <td>深度學習</td>
+                                    </tr>
+                                    <tr>
+                                        <td>23</td>
+                                        <td>范予綸</td>
+                                        <td>資管118</td>
+                                        <td>深度學習, React</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
-                </div> -->
 
 
 
@@ -677,8 +789,8 @@
         <!-- JS：學期成員切換功能 -->
         <script>
             function toggleMember(semester) {
-                document.getElementById('member-113-1').style.display = semester === '113-1' ? 'block' : 'none';
-                document.getElementById('member-113-2').style.display = semester === '113-2' ? 'block' : 'none';
+                document.getElementById('member-114-1').style.display = semester === '114-1' ? 'block' : 'none';
+                document.getElementById('member-114-2').style.display = semester === '114-2' ? 'block' : 'none';
             }
         </script>
     </section>
@@ -793,6 +905,21 @@
                     </div>
                     <div class="section-content">
                         <div class="row">
+                            <!-- 114-2 -->
+                            <div class="col-md-6">
+                                <div class="container">
+                                    <div class="image-cell">
+                                        <img src="images/14th/黑客松下/114-2黑克松大合照.webp" alt="Image 2">
+                                    </div>
+                                    <div class="title">
+                                        <h4>114-2學年度 網研期末黑客松</h4>
+                                    </div>
+                                    <p>活動年度：114學年度下學期<br>活動內容：<br>本學期期末黑客松順利舉行！活動結合了「深度學習」與「React」的實作成果發表，讓社員們在輕鬆交流的氛圍中驗收所學並共同享用美食。
+                                    </p>
+                                    <a id="link1" class="history-btn" href="114_2_hak.html" target="_blank">前往</a>
+                                </div>
+                            </div>
+
                             <!-- 114-1 -->
                             <div class="col-md-6">
                                 <div class="container">

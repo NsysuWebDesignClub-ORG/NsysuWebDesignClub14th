@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="utf-8" />
+    <title>中山網路程式設計研究社</title>
+    <link rel="icon" type="image/x-icon" href="/images/logo.ico">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="image/logo.jpg" type="image/jpeg">
+    <link rel="shortcut icon" href="image/logo.jpg" type="image/jpeg">
+
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+
+        .white-container {
+            background-color: #fff;
+            padding: 30px;
+            margin: 30px 0;
+            border-radius: 15px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            /* 調整陰影讓區塊更立體一點 */
+            box-sizing: border-box;
+            /* 已移除 border-left */
+        }
+
+        .white-container h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: #3498db;
+            font-weight: 600;
+        }
+
+        #navbarSupportedContent {
+            justify-items: flex-end;
+            justify-content: flex-end;
+        }
+
+        /* --- 修正連結樣式 --- */
+        /* 只針對不是按鈕 (.btn) 的連結設定顏色，避免衝突 */
+        .white-container a:not(.btn) {
+            color: #3498db;
+            text-decoration: none;
+            transition: 0.3s;
+            font-weight: 500;
+        }
+
+        .white-container a:not(.btn):hover {
+            color: #2980b9;
+            text-decoration: underline;
+        }
+
+        /* --- 結束修正 --- */
+
+        .sectioner-header {
+            padding-top: 60px;
+            padding-bottom: 20px;
+        }
+
+        .sectioner-header h3 {
+            color: #3498db;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .line {
+            display: block;
+            width: 50px;
+            height: 3px;
+            background: #3498db;
+            margin: 0 auto;
+        }
+
+        .question_img {
+            width: 100%;
+            max-width: 48%;
+            margin: 5px;
+            border-radius: 5px;
+            border: 1px solid #eee;
+        }
+
+        .options-list li {
+            padding: 8px 15px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            background-color: #fdfdfd;
+            border: 1px solid #eee;
+        }
+
+        .options-list li strong {
+            color: #3498db;
+            margin-right: 10px;
+        }
+
+        .award-img {
+            width: 100%;
+            height: 300px;
+            /* 固定高度保持整齊 */
+            object-fit: cover;
+            /* 裁切填滿 */
+            border-radius: 8px;
+        }
+
+        .photo {
+            max-width: 200px;
+        }
+
+        #highlights {
+            margin-bottom: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="navbar-container" class="loading">
+        <div class="loading-spinner"></div>
+    </div>
+    <script src="include.js"></script>
+
+    <br><br><br>
+
+    <div class="container">
+
+        <section id="activity-description">
+            <div class="sectioner-header text-center">
+                <h3>114-2期末黑客松</h3>
+                <span class="line"></span>
+            </div>
+            <div class="white-container">
+                <p class="lead">本學期網研社社團即將告一段落，為了感謝辛苦的講師們、幹部們以及剛結束期末考的社員，為此舉辦一個期末聚會，進行小比賽驗收教學成果，並藉此促進社員感情。</p>
+                <hr>
+
+                <h4><i class="fas fa-info-circle"></i> 活動內容</h4>
+                <p>深度學習與 React 實作競賽</p>
+
+                <div class="row mt-4">
+                    <div class="col-md-5">
+                        <div class="p-3 bg-light rounded h-100">
+                            <h4><i class="far fa-calendar-alt"></i> 時間、地點</h4>
+                            <ul class="list-unstyled mt-3">
+                                <li class="mb-2"><strong>日期：</strong>2026年5月26日 (二)</li>
+                                <li><strong>場地：</strong>CM1019</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="p-3 bg-light rounded h-100">
+                            <h4><i class="fas fa-list-ol"></i> 活動流程</h4>
+                            <table class="table table-sm table-borderless mt-2">
+                                <tbody>
+                                    <tr>
+                                        <td style="width: 110px;">18:30 - 19:15</td>
+                                        <td>吃吃喝喝 & 期末總結</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19:20 - 19:40</td>
+                                        <td>吃吃喝喝 & 李景臣講師活動說明 與 Blooket比賽(10~15題)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>19:45 - 20:05</td>
+                                        <td>吃吃喝喝 & 張耀仁講師活動說明 與 Blooket比賽(10~15題)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20:10 - 20:50</td>
+                                        <td>同學實作部分時間</td>
+                                    </tr>
+                                    <tr>
+                                        <td>20:50 - 21:00</td>
+                                        <td>頒獎 + 大合照</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row pt-4">
+                    <div class="col-md-6">
+                        <h4>活動摘要：深度學習</h4>
+                        <p class="text-secondary small">張耀仁講師 | 深度學習與卷積神經網路</p>
+                        <p>本次活動將以「深度學習與卷積神經網路」為核心，結合 Blooket 趣味競賽與 Kaggle 平台實戰。首先透過 Blooket 互動遊戲，快速檢測學員對於神經網路基本元件（如
+                            Linear Regression,CNN、Transformer、Loss Function 等）的觀念掌握。隨後進入 Kaggle 實戰環節，學生將化身為 AI
+                            訓練師，針對特定的影像資料集進行模型調優與參數對決。活動旨在模擬真實的數據科學競賽流程，測驗學生對模型擬合、泛化能力的理解，並提升在有限算力下的實戰解題實力。</p>
+                    </div>
+                    <div class="col-md-6">
+                        <h4>活動摘要：React 網頁設計</h4>
+                        <p class="text-secondary small">李景臣講師 | React前後端系統建置</p>
+                        <p>本次活動將以「React前後端系統建制」為核心進行實戰。第一階段將以Blooket趣味競賽讓大家進行理論知識的競技，以了解學員們對整體React框架的熟悉度。第二階段將以實作賽進行比較，學員們將挑戰如何在有限的時間内以React搭配node.js建制一個簡易前後端系統，以了解學員本學期的學習成果。
+                        </p>
+                    </div>
+                </div>
+
+                <!-- <div class="alert alert-secondary mt-3" role="alert">
+                    <h5 class="alert-heading"><i class="fas fa-exclamation-triangle"></i> 比賽規則</h5>
+                    <ol class="mb-0">
+                        <li>不可使用 any 外部未經授權的完整複製代碼。</li>
+                        <li>可參考先前的課堂講義或 React / PyTorch 官方文件。</li>
+                        <li>排名依照 Blooket 積分及實作完整度。</li>
+                    </ol>
+                </div> -->
+            </div>
+        </section>
+
+        <section id="question-description">
+            <div class="sectioner-header text-center">
+                <h3>題目舉例說明</h3>
+                <span class="line"></span>
+            </div>
+
+            <div class="white-container">
+
+                <div class="mb-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4>React 與 前後端 API 串接</h4>
+                        <a href="https://dashboard.blooket.com/set/6a0bd29c54234f801d626ba2"
+                            class="btn btn-outline-primary btn-sm" target="_blank">完整題目連結</a>
+                    </div>
+
+                    <div class="card bg-light border-0 p-3">
+                        <p class="mb-1"><strong><i class="fas fa-question-circle"></i> 題目：</strong></p>
+                        <p>當前端使用 fetch 呼叫 API 取得回應物件 (Response) 後，通常需要使用哪一個內建方法將其轉換為可讀的 JSON 格式？</p>
+
+                        <div class="mt-2">
+                            <h5>選項：</h5>
+                            <ul class="options-list list-unstyled">
+                                <li><strong>A.</strong> .toString( )</li>
+                                <li><strong>B.</strong> JSON.stringify( )</li>
+                                <li><strong>C.</strong> .json( )</li>
+                                <li><strong>D.</strong> JSON.parse( )</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion mt-3" id="accordionReact">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingReact">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseReact" aria-expanded="false" aria-controls="collapseReact">
+                                    查看答案與解析
+                                </button>
+                            </h2>
+                            <div id="collapseReact" class="accordion-collapse collapse" aria-labelledby="headingReact"
+                                data-bs-parent="#accordionReact">
+                                <div class="accordion-body">
+                                    <p><strong>正確答案：C</strong></p>
+                                    <p><strong>解析：</strong>`.json()` 是 Response 物件的內建方法，專門用來將回應內容解析為可用的 JavaScript 物件。
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <div class="mb-5 mt-5">
+                    <h4>React：實作題型</h4>
+                    <p class="text-muted">點擊圖片可查看大圖</p>
+                    <div class="d-flex flex-wrap justify-content-center">
+                        <img class="question_img" src="images/14th/黑客松下/React實作1.jpg" alt="實作題目1" data-bs-toggle="modal"
+                            data-bs-target="#imageModal" onclick="document.getElementById('modalImage').src=this.src"
+                            style="cursor: pointer;">
+                        <img class="question_img" src="images/14th/黑客松下/React實作2.jpg" alt="實作題目2" data-bs-toggle="modal"
+                            data-bs-target="#imageModal" onclick="document.getElementById('modalImage').src=this.src"
+                            style="cursor: pointer;">
+                        <img class="question_img" src="images/14th/黑客松下/React實作3.jpg" alt="實作題目3" data-bs-toggle="modal"
+                            data-bs-target="#imageModal" onclick="document.getElementById('modalImage').src=this.src"
+                            style="cursor: pointer;">
+                        <img class="question_img" src="images/14th/黑客松下/React實作4.jpg" alt="實作題目4" data-bs-toggle="modal"
+                            data-bs-target="#imageModal" onclick="document.getElementById('modalImage').src=this.src"
+                            style="cursor: pointer;">
+                    </div>
+                    <div class="text-center mt-3">
+                        <a href="https://drive.google.com/file/d/1ytK-9nCce5kIb4g-LDNfLacinaHh3LXc/view?usp=drive_link"
+                            class="btn btn-outline-primary" target="_blank">查看更多題目</a>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="mb-5 mt-5">
+                    <div class="d-flex justify-content-between align-items-center mb-3">
+                        <h4>深度學習 Blooket 挑戰</h4>
+                        <a href="https://dashboard.blooket.com/set/6a10150243e211292ddeb078"
+                            class="btn btn-outline-primary btn-sm" target="_blank">完整題目連結</a>
+                    </div>
+
+                    <div class="card bg-light border-0 p-3">
+                        <p class="mb-1"><strong><i class="fas fa-question-circle"></i> 題目：</strong></p>
+                        <p>Adam 優化器相比基本的 SGD，主要優點是什麼？</p>
+
+                        <div>
+                            <h5>選項：</h5>
+                            <ul class="options-list list-unstyled">
+                                <li><strong>A.</strong> 訓練速度一定更快</li>
+                                <li><strong>B.</strong> 自動調整每個參數的學習率，收斂更穩定</li>
+                                <li><strong>C.</strong> 引入了動量(momentum)的概念，避免訓練卡住</li>
+                                <li><strong>D.</strong> 模型準確率一定更高</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion mt-3" id="accordionDL">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingDL">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseDL" aria-expanded="false" aria-controls="collapseDL">
+                                    查看答案與解析
+                                </button>
+                            </h2>
+                            <div id="collapseDL" class="accordion-collapse collapse" aria-labelledby="headingDL"
+                                data-bs-parent="#accordionDL">
+                                <div class="accordion-body">
+                                    <p><strong>正確答案：B</strong></p>
+                                    <p><strong>解析：</strong>Adam 結合了動量與自適應學習率的機制，能針對每個參數自動調整學習率，使訓練過程收斂更穩定。</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+
+                <div class="mb-5 mt-5">
+                    <h4>深度學習：實作題型</h4>
+                    <p class="text-muted">點擊圖片可查看大圖</p>
+                    <div class="d-flex flex-wrap justify-content-center">
+                        <img class="question_img" src="images/14th/黑客松下/深度學習實作1.jpg" alt="實作題目1" data-bs-toggle="modal"
+                            data-bs-target="#imageModal" onclick="document.getElementById('modalImage').src=this.src"
+                            style="cursor: pointer;">
+                        <img class="question_img" src="images/14th/黑客松下/深度學習實作2.jpg" alt="實作題目2" data-bs-toggle="modal"
+                            data-bs-target="#imageModal" onclick="document.getElementById('modalImage').src=this.src"
+                            style="cursor: pointer;">
+                        <img class="question_img" src="images/14th/黑客松下/深度學習實作3.jpg" alt="實作題目3" data-bs-toggle="modal"
+                            data-bs-target="#imageModal" onclick="document.getElementById('modalImage').src=this.src"
+                            style="cursor: pointer;">
+                        <img class="question_img" src="images/14th/黑客松下/深度學習實作4.jpg" alt="實作題目4" data-bs-toggle="modal"
+                            data-bs-target="#imageModal" onclick="document.getElementById('modalImage').src=this.src"
+                            style="cursor: pointer;">
+                    </div>
+                    <div class="text-center mt-3">
+                        <a href="https://drive.google.com/file/d/1mxXog3UzG5HywHN9UP4PPdap0BgARwfK/view?usp=drive_link"
+                            class="btn btn-outline-primary" target="_blank">查看更多題目</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="awards">
+            <div class="sectioner-header text-center">
+                <h3>得獎照片</h3>
+                <span class="line"></span>
+            </div>
+
+            <div class="white-container">
+                <div class="row">
+                    <!-- React 遊戲 Blooket 得獎 -->
+                    <div class="col-md-6 mb-5">
+                        <h4 class="text-center mb-3">React 遊戲 Blooket 得獎</h4>
+                        <div id="carouselReactBlooket" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselReactBlooket" data-bs-slide-to="0"
+                                    class="active"></button>
+                                <button type="button" data-bs-target="#carouselReactBlooket"
+                                    data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#carouselReactBlooket"
+                                    data-bs-slide-to="2"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/14th/黑客松下/ReactBlooket第一名.webp" class="d-block w-100 award-img"
+                                        alt="得獎照片">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/14th/黑客松下/ReactBlooket第二名.webp" class="d-block w-100 award-img"
+                                        alt="得獎照片">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/14th/黑客松下/ReactBlooket第三名.webp" class="d-block w-100 award-img"
+                                        alt="得獎照片">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselReactBlooket"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselReactBlooket"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <p class="text-center mt-2">第一名：楊雅安、第二名：柯絜甯、第三名：汪俊廷</p>
+                    </div>
+
+                    <!-- 深度學習 遊戲 Blooket 得獎 -->
+                    <div class="col-md-6 mb-5">
+                        <h4 class="text-center mb-3">深度學習 遊戲 Blooket 得獎</h4>
+                        <div id="carouselDLBlooket" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselDLBlooket" data-bs-slide-to="0"
+                                    class="active"></button>
+                                <button type="button" data-bs-target="#carouselDLBlooket" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#carouselDLBlooket" data-bs-slide-to="2"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/14th/黑客松下/深度Blooket第一名.webp" class="d-block w-100 award-img"
+                                        alt="得獎照片">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/14th/黑客松下/深度Blooket第二名.webp" class="d-block w-100 award-img"
+                                        alt="得獎照片">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/14th/黑客松下/深度Blooket第三名.webp" class="d-block w-100 award-img"
+                                        alt="得獎照片">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselDLBlooket"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselDLBlooket"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <p class="text-center mt-2">第一名：楊雅安、第二名：王玉儒、第三名：吳英綺</p>
+                    </div>
+
+                    <!-- React 實作得獎 -->
+                    <div class="col-md-6 mb-5">
+                        <h4 class="text-center mb-3">React 實作得獎</h4>
+                        <div id="carouselReactImpl" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselReactImpl" data-bs-slide-to="0"
+                                    class="active"></button>
+                                <button type="button" data-bs-target="#carouselReactImpl" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#carouselReactImpl" data-bs-slide-to="2"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/14th/黑客松下/React實作第一名.webp" class="d-block w-100 award-img"
+                                        alt="得獎照片">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/14th/黑客松下/React實作第二名.webp" class="d-block w-100 award-img"
+                                        alt="得獎照片">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/14th/黑客松下/React實作第三名.webp" class="d-block w-100 award-img"
+                                        alt="得獎照片">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselReactImpl"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselReactImpl"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <p class="text-center mt-2">第一名：張萍恩、第二名：楊雅安、第三名：王玉儒</p>
+                    </div>
+
+                    <!-- 深度學習實作得獎 -->
+                    <div class="col-md-6 mb-5">
+                        <h4 class="text-center mb-3">深度學習實作得獎</h4>
+                        <div id="carouselDLImpl" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                                <button type="button" data-bs-target="#carouselDLImpl" data-bs-slide-to="0"
+                                    class="active"></button>
+                                <button type="button" data-bs-target="#carouselDLImpl" data-bs-slide-to="1"></button>
+                                <button type="button" data-bs-target="#carouselDLImpl" data-bs-slide-to="2"></button>
+                            </div>
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <img src="images/14th/黑客松下/深度實作第一名.webp" class="d-block w-100 award-img" alt="得獎照片">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/14th/黑客松下/深度實作第二名.webp" class="d-block w-100 award-img" alt="得獎照片">
+                                </div>
+                                <div class="carousel-item">
+                                    <img src="images/14th/黑客松下/深度實作第三名.webp" class="d-block w-100 award-img" alt="得獎照片">
+                                </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carouselDLImpl"
+                                data-bs-slide="prev">
+                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carouselDLImpl"
+                                data-bs-slide="next">
+                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                        <p class="text-center mt-2">第一名：李蘇容、第二名：陳皓宇、第三名：柯絜甯</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="highlights">
+            <div class="sectioner-header text-center">
+                <h3>花絮照片</h3>
+                <span class="line"></span>
+            </div>
+            <div id="highlightsCarousel" class="carousel slide white-container" data-bs-ride="carousel">
+                <div class="carousel-inner rounded">
+                    <div class="carousel-item active">
+                        <img src="images/14th/黑客松下/114-2黑克松大合照.webp" class="d-block w-100" alt="花絮照片">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/14th/黑客松下/114-2黑克松花絮1.webp" class="d-block w-100" alt="花絮照片">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/14th/黑客松下/114-2黑克松花絮2.webp" class="d-block w-100" alt="花絮照片">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/14th/黑客松下/114-2黑克松花絮3.webp" class="d-block w-100" alt="花絮照片">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/14th/黑客松下/114-2黑克松花絮4.webp" class="d-block w-100" alt="花絮照片">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/14th/黑客松下/114-2黑克松花絮5.webp" class="d-block w-100" alt="花絮照片">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/14th/黑客松下/114-2黑克松花絮6.webp" class="d-block w-100" alt="花絮照片">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/14th/黑客松下/114-2黑克松花絮7.webp" class="d-block w-100" alt="花絮照片">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/14th/黑客松下/114-2黑克松花絮8.webp" class="d-block w-100" alt="花絮照片">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="images/14th/黑客松下/114-2黑克松花絮9.webp" class="d-block w-100" alt="花絮照片">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#highlightsCarousel"
+                    data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">上一頁</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#highlightsCarousel"
+                    data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">下一頁</span>
+                </button>
+            </div>
+        </section>
+
+
+    </div>
+    <section class="download section-padding" data-scroll-index='7' id="7" style="position: relative; z-index: 10;">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="sectioner-header text-center white">
+                        <h3>歡迎加入網研社!</h3>
+                        <span class="line"></span>
+                        <p class="white">馬上搜尋網研社FB粉專及社團，獲得第一手資訊</p>
+                    </div>
+                </div>
+                <div class="col-md-12">
+                    <div class="section-content text-center">
+                        <ul class="list-unstyled d-flex justify-content-center"
+                            style="position: relative; z-index: 20;">
+                            <li class="mx-3 wow fadeInUp" data-wow-delay="0.4s">
+                                <a href="https://www.facebook.com/NsysuWpdca" target="_blank"
+                                    style="display: block; position: relative; z-index: 30;">
+                                    <img src="images/fb_icon.png" style="width:50px; height:50px" />
+                                    <span class="white d-block">粉絲專頁</span>
+                                </a>
+                            </li>
+
+                            <li class="mx-3 wow fadeInUp" data-wow-delay="0.7s">
+                                <a href="https://www.facebook.com/groups/NsysuMisClub" target="_blank"
+                                    style="display: block; position: relative; z-index: 30;">
+                                    <img src="images/fb_icon.png" style="width:50px; height:50px" />
+                                    <span class="white d-block">FB社團</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+    <script src="js/scrollIt.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+
+        $(window).on("scroll", function () {
+            var bodyScroll = $(window).scrollTop(),
+                navbar = $(".navbar");
+            if (bodyScroll > 50) {
+                $('.navbar-logo img').attr('src', 'images/logo.jpg');
+                navbar.addClass("nav-scroll");
+            } else {
+                $('.navbar-logo img').attr('src', 'images/logo.jpg');
+                navbar.removeClass("nav-scroll");
+            }
+        });
+
+        $.scrollIt({
+            easing: 'swing',
+            scrollTime: 900,
+            activeClass: 'active',
+            onPageChange: null,
+            topOffset: -63
+        });
+    </script>
+    <!-- 圖片放大 Modal -->
+    <div class="modal fade" id="imageModal" tabindex="-1" aria-labelledby="imageModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-transparent border-0">
+                <div class="modal-body text-center p-0">
+                    <img id="modalImage" src="" class="img-fluid rounded"
+                        style="max-height: 90vh; border: 3px solid #fff; box-shadow: 0 4px 20px rgba(0,0,0,0.5);">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
