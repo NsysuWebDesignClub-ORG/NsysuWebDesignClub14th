@@ -1067,7 +1067,12 @@
                     style="width: 90% !important;padding:0 !important; overflow-x: hidden;">
                     <p class="experienceTitle">114學年度參與心得</p>
                     <div class="section-content">
-                        <div class="row">
+                        <!-- 幹部/社員 切換按鈕 -->
+                        <div class="role-link" style="text-align:center; margin-bottom: 12px;">
+                            <a href="javascript:void(0)" onclick="ExperienceRoleChange('staff')" class="active">幹部心得</a>
+                            <a href="javascript:void(0)" onclick="ExperienceRoleChange('member')">社員心得</a>
+                        </div>
+                        <div id="ExperienceRoleStaff" class="row">
                             <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.2s">
                                 <h4><span class="enc" data-n="546L5Yui5YWo77ya"></span></h4>
                                 <p>擔任網研社社長，我有幸參與並主導本屆課程的整體規劃與安排。從找講師到申請經費再到舉辦黑客松，帶領著社團幹部們一起將網研社承辦好，除了參與課程的同學以外，我也從中學習了不少！
@@ -1107,6 +1112,93 @@
                             <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.8s">
                                 <h4><span class="enc" data-n="5p6X6Kmp56mO77ya"></span></h4>
                                 <p>這學年擔任網路程式研究社財務長，主要負責協助處理社團補助、保證金收取與退還，以及期末黑客松活動的獎金規劃與餐點訂購等事務。在與其他幹部協調與對社員溝通的過程中，我學會了更有條理地安排流程，也提升了溝通與協作能力，理解團隊分工的重要性。面對黑客松活動的準備，也讓我更清楚活動細節管理與財務控管的責任。除此之外，社團提供的程式課程讓我有機會學習更多實作技能，獲益良多。這段經驗不僅讓我在能力上成長，也讓我更珍惜團隊共同完成目標的過程。
+                                </p>
+                            </div>
+                        </div>
+                        <div id="ExperienceRoleMember" class="row" style="display:none;">
+                            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.2s">
+                                <h4><span class="enc" data-n="6Zmz5a625pmo77ya"></span></h4>
+                                <p>React還蠻有趣的，一開始覺得有點看不懂，但實際跟著做之後就比較有感覺。期望之後可以多教一些網頁互動的東西
+                                </p>
+                            </div>
+                            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.2s">
+                                <h4><span class="enc" data-n="5p6X5oCd6Iq477ya"></span></h4>
+                                <p>深度學習對我來說有點難，學長講得很好，不過上完之後有比較知道Ai大概是怎麼運作的。雖然沒有到很熟，但覺得有學到新東西
+                                </p>
+                            </div>
+                            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.4s">
+                                <h4><span class="enc" data-n="5p+v57Wc55Sv77ya"></span></h4>
+                                <p>這次同時學到react還有深度學習，感覺內容蠻多的。React比較能馬上看到成果，深度學習就比較需要慢慢理解，最後黑客松也很好玩的
+                                </p>
+                            </div>
+                            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.4s">
+                                <h4><span class="enc" data-n="55m95oiQ5ZCb77ya"></span></h4>
+                                <p>講師講的好難，但還是有學到一點東西，知道AI不是隨便跑出答案的
+                                </p>
+                            </div>
+                            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.6s">
+                                <h4><span class="enc" data-n="5ZCz6Iux57a677ya"></span></h4>
+                                <p>我覺得上課氣氛還不錯，學長會和我們互動。最後的黑客松活動很好玩，大家一起想答案的感覺很有趣，謝謝學長們準備
+                                </p>
+                            </div>
+                            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.6s">
+                                <h4><span class="enc" data-n="6LO05pix55KH77ya"></span></h4>
+                                <p>這學期有學到一些以前沒接觸過的東西，像是深度學習跟AI的概念。雖然有點難(特別是深度學習)，但還算有趣，之後可以建議python，或是教AI的應用，這方面感覺是趨勢，學了未來感覺會用到。
+                                </p>
+                            </div>
+                            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.8s">
+                                <h4><span class="enc" data-n="6YOt6Iqz5aak77ya"></span></h4>
+                                <p>React一開始寫起來有點不習慣，因為跟普通html不太一樣。不過做到後面比較知道它方便在哪裡，整體來說還不錯
+                                </p>
+                            </div>
+                            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.8s">
+                                <h4><span class="enc" data-n="6Zmz6aGl5LqI77ya"></span></h4>
+                                <p>深度學習的課讓我對ai比較有概念，雖然有些理論部分真的比較難，但用例子講解會比較好懂，如果之後可以教慢一點會學到的比較多，但還是很讚
+                                </p>
+                            </div>
+                            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.2s">
+                                <h4><span class="enc" data-n="5rGq5L+K5bu377ya"></span></h4>
+                                <p>這學期課都有上。react做出畫面的時候比較有成就感，深度學習雖然比較抽象，但也算是有學到，最後黑客松很讚，玩得很開心
+                                </p>
+                            </div>
+                            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.2s">
+                                <h4><span class="enc" data-n="5pa55pWs5qOg77ya"></span></h4>
+                                <p>深度學習對我來說是比較新的東西，剛開始聽有點陌生。不過上完之後大概知道它在做什麼，覺得還蠻值得學的
+                                </p>
+                            </div>
+                            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.4s">
+                                <h4><span class="enc" data-n="5qWK6ZuF5a6J77ya"></span></h4>
+                                <p>雖然課程有些地方有點難，特別是深度學習，但整體還是蠻好玩的。React可以直接看到成果，深度學習則是讓我比較了解AI背後的東西。最後黑客松也讚，下次想學爬蟲
+                                </p>
+                            </div>
+                            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.4s">
+                                <h4><span class="enc" data-n="6JSh5Lul5oGp77ya"></span></h4>
+                                <p>這學期上的還蠻開心的，深度學習雖然沒有很簡單，但學長們講得蠻清楚的，之後可以再多放一些簡單的範例
+                                </p>
+                            </div>
+                            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.6s">
+                                <h4><span class="enc" data-n="5ZCz5bKx5bqt77ya"></span></h4>
+                                <p>React覺得蠻實用的，雖然一開始語法有點不熟，但慢慢學到後面就有比較懂了，看到網頁成功跑出來的時候其實還蠻有成就感的
+                                </p>
+                            </div>
+                            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.6s">
+                                <h4><span class="enc" data-n="5p2O6JiH5a6577ya"></span></h4>
+                                <p>我覺得這學期內容不會太無聊，因為有不同主題可以學，React比較像在做網頁，深度學習比較像在理解 AI，兩個都蠻有收穫的
+                                </p>
+                            </div>
+                            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.8s">
+                                <h4><span class="enc" data-n="6Zmz5L2z5pmo77ya"></span></h4>
+                                <p>有學到不少東西，雖然不是每個地方都完全懂。最後黑客松活動是最讚的，kahoot玩得很開心
+                                </p>
+                            </div>
+                            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.8s">
+                                <h4><span class="enc" data-n="546L6IqK5am377ya"></span></h4>
+                                <p>原本對深度學習沒什麼概念，上完課之後有比較知道它跟AI的關係。內容雖然有點難，但就漲一點知識也可以
+                                </p>
+                            </div>
+                            <div class="col-md-6 faq-content wow fadeInUp" data-wow-delay="0.2s">
+                                <h4><span class="enc" data-n="6IyD5LqI57a477ya"></span></h4>
+                                <p>React和深度學習都各有難的地方，最後還是有學到一些東西，辛苦學長們了
                                 </p>
                             </div>
                         </div>
@@ -1265,6 +1357,23 @@
             document.getElementById('ExperienceChange112').style.display = semester === '112' ? 'block' : 'none';
             document.getElementById('ExperienceChange113').style.display = semester === '113' ? 'block' : 'none';
             document.getElementById('ExperienceChange114').style.display = semester === '114' ? 'block' : 'none';
+        }
+
+        // 114學年度：幹部心得 / 社員心得 切換
+        function ExperienceRoleChange(role) {
+            const staff = document.getElementById('ExperienceRoleStaff');
+            const member = document.getElementById('ExperienceRoleMember');
+            staff.style.display = role === 'staff' ? 'flex' : 'none';
+            member.style.display = role === 'member' ? 'flex' : 'none';
+            // WOW.js 不會處理初始 display:none 的元素，切換顯示時強制可見
+            const shown = role === 'staff' ? staff : member;
+            shown.querySelectorAll('.wow').forEach(el => {
+                el.style.visibility = 'visible';
+                el.style.opacity = '1';
+            });
+            document.querySelectorAll('.role-link a').forEach(a => a.classList.remove('active'));
+            const idx = role === 'staff' ? 0 : 1;
+            document.querySelectorAll('.role-link a')[idx].classList.add('active');
         }
     </script>
     <!-------FAQ End------->
@@ -1460,6 +1569,33 @@
     .title-link a:hover {
         background-color: #123962;
         color: #fff;
+    }
+
+    /* 幹部心得 / 社員心得 切換按鈕（金色系，與學年度按鈕區隔） */
+    .role-link a {
+        display: inline-block;
+        text-decoration: none;
+        color: #8a6d2b;
+        font-weight: bold;
+        font-size: 17px;
+        padding: 5px 18px;
+        margin: 0 6px;
+        border: 2px solid #d6b871;
+        border-radius: 20px;
+        background-color: #fff;
+        cursor: pointer;
+        transition: all 0.3s;
+    }
+
+    .role-link a:hover {
+        background-color: #d6b871;
+        color: #fff;
+    }
+
+    .role-link a.active {
+        background-color: #d6b871;
+        color: #fff;
+        border-color: #b89745;
     }
 </style>
 

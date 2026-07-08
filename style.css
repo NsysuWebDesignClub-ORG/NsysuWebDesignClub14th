@@ -1164,6 +1164,11 @@ a.collapse_title :hover {
 	box-shadow: 0 4px 14px rgba(201, 168, 74, 0.35);
 }
 
+/* 心得區塊：標題與內容之間不要留太多空 */
+[id="5"] .section-content {
+	margin-top: 10px;
+}
+
 /* 心得卡片 */
 [id="5"] .faq-content {
 	background: #fffdf8 !important;
